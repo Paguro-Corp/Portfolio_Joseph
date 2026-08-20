@@ -129,36 +129,37 @@ const COPY: Record<Lang, Copy> = {
       themeDark: "Switch to dark theme",
     },
     hero: {
-      badge: "[CREATIVE_AI_26]",
-      title: <>Visual Content & <em>AI for E-commerce</em>.</>,
-      text: "Scalable creative systems producing high-impact, consistent, and visually compelling product & lifestyle content using AI.",
+      badge: "[GROWTH_AUTOMATION_26]",
+      title: <>Process Automation & <em>AI for Business</em>.</>,
+      text: "I design and integrate digital architectures with n8n, CRM, and AI agents to eliminate repetitive tasks and scale your operations.",
       work: "View work",
       system: "View system",
-      visualAria: "Danna Olarte visual system",
-      video: "AI · CREATIVE ENGINE",
+      visualAria: "Joseph Clavijo visual system",
+      video: "AUTOMATION ENGINE",
       variations: "saved / month",
     },
     proof: [
-      ["EXPERIENCE", "5+ YEARS CREATIVE"],
-      ["FOCUS", "AI CONTENT & DESIGN"],
-      ["BASE", "REMOTE / IN-HOUSE"],
+      ["EXPERIENCE", "5+ YEARS ACTIVE"],
+      ["FOCUS", "AUTOMATION & AI"],
+      ["BASE", "COLOMBIA / REMOTE"],
       ["STATUS", "AVAILABLE NOW"],
     ],
     blocks: {
-      eyebrow: "WHAT I DO · 3 BLOCKS",
-      title: "Scalable creative systems, not simple assets.",
-      text: "Each block operates independently, but together they form your store's visual engine.",
+      eyebrow: "WHAT I DO · 4 BLOCKS",
+      title: "Scalable operating systems, not simple assets.",
+      text: "Each block operates independently, but together they form your business's operating engine.",
       items: [
-        "AI Content Creation",
-        "Audiovisual Production",
-        "Content Automation",
+        "n8n & Make Automation",
+        "AI Agents & Chatbots",
+        "CRM & Lead Automation",
+        "Sales Ops & Reporting",
       ],
-      connected: "Visual Assets & Frameworks",
+      connected: "Automation & Integrations",
     },
     services: {
       eyebrow: "SERVICES · 4 PILLARS",
-      title: <>Four blocks. <em>One system.</em></>,
-      text: "Each block operates independently, but together they form your store's visual engine.",
+      title: <>Four pillars. <em>One system.</em></>,
+      text: "Each block operates independently, but together they form your business's operating system.",
       selected: "Implemented projects",
       items: EN_SERVICES,
       viewProjects: "View projects",
@@ -166,28 +167,28 @@ const COPY: Record<Lang, Copy> = {
     },
     portfolio: {
       eyebrow: "PORTFOLIO · SELECTED WORK",
-      title: "Mixed media, visual systems, and campaign-ready assets.",
+      title: "Scalable workflows, AI integrations, and real-time reporting.",
       all: "View all",
       items: [
-        ["Skincare: Hero set", "AI Image", "large"],
-        ["Coffee brand: :30 spot", "Video Ad", "wide"],
-        ["Sneakers: static carousel", "Creative", "small"],
-        ["DTC supplement: LP", "Landing", "small"],
-        ["Workflow: 12 variations / hour", "Automation", "wide"],
-        ["Apparel: lifestyle pack", "AI Image", "small"],
-        ["Home goods: Reels x6", "Short video", "small"],
+        ["Operations Automation: n8n", "n8n Workflow", "large"],
+        ["WhatsApp Sales Chatbots", "AI Agent", "wide"],
+        ["GoHighLevel Sales Funnel", "CRM", "small"],
+        ["Sales Reporting & Dashboards", "Dashboard", "small"],
+        ["Real-time Synchronization", "Automation", "wide"],
+        ["Customer Nurturing Flow", "Automation", "small"],
+        ["Paid Ads Dashboard", "Reporting", "small"],
       ],
     },
     cta: {
-      title: "Turn your creative concepts into a content system working 24/7.",
-      text: "Free creative audit · 20 minutes · no commitment",
+      title: "Automate your business and create an operating system that works 24/7.",
+      text: "Free automation audit · 20 minutes · no commitment",
       button: "Get started",
     },
     contact: {
       eyebrow: "CONTACT · LEAD CAPTURE",
-      title: <>Tell us what you sell. <em>We create the content.</em></>,
-      text: "Send us a short brief and we will return a free 20-minute creative diagnosis: what is missing, what to optimize, and what to produce first.",
-      email: "danna.28.olarte@gmail.com",
+      title: <>Tell us about your business. <em>We automate it.</em></>,
+      text: "Send us a message and we will return a free 20-minute automation audit: what to optimize, what to integrate, and what to automate first.",
+      email: "joseph.clavijo.dev@gmail.com",
       whatsapp: "WhatsApp: +57 313 612 9197",
       response: "Typical reply within ~24h, business days",
       fields: {
@@ -199,7 +200,7 @@ const COPY: Record<Lang, Copy> = {
         services: "Service needed",
         multi: "(multi-select)",
         message: "Message",
-        submit: "Request diagnosis",
+        submit: "Request audit",
         idle: "No spam. Ever.",
         sent: "Brief received. We will contact you soon.",
       },
@@ -208,10 +209,10 @@ const COPY: Record<Lang, Copy> = {
         company: "Your brand name",
         whatsapp: "+57 313 612 9197",
         web: "pagurai.com · @brand",
-        business: "Skincare DTC, specialty coffee, etc.",
+        business: "E-commerce, Agency, SaaS, etc.",
         message: "Tell us what you need...",
       },
-      serviceOptions: ["AI Content Creation", "Audiovisual Production", "Content Automation"],
+      serviceOptions: ["Automation with n8n & Make", "AI Agents & Chatbots", "CRM & Lead Automation", "Sales Ops & Reporting"],
     },
     footer: "HERO → ABOUT ME → SERVICES → PORTFOLIO → CONTACT",
   },
@@ -229,65 +230,66 @@ const COPY: Record<Lang, Copy> = {
       themeDark: "Cambiar a tema oscuro",
     },
     hero: {
-      badge: "[CREATIVE_AI_26]",
-      title: <>Contenido Visual e <em>IA para E-commerce</em>.</>,
-      text: "Sistemas creativos escalables que producen contenido de producto y estilo de vida atractivo, consistente y visualmente impactante.",
+      badge: "[GROWTH_AUTOMATION_26]",
+      title: <>Automatización de Procesos e <em>IA para Negocios</em>.</>,
+      text: "Diseño e integro arquitecturas digitales con n8n, CRM y agentes de IA para eliminar tareas repetitivas y escalar tus operaciones.",
       work: "Ver trabajo",
       system: "Ver sistema",
-      visualAria: "Sistema visual de Danna Olarte",
-      video: "IA · MOTOR CREATIVO",
+      visualAria: "Sistema de automatización de Joseph Clavijo",
+      video: "IA · MOTOR DE AUTOMATIZACIÓN",
       variations: "ahorradas / mes",
     },
     proof: [
-      ["EXPERIENCIA", "5+ AÑOS CREATIVOS"],
-      ["ENFOQUE", "IA Y DISEÑO VISUAL"],
-      ["BASE", "REMOTE / IN-HOUSE"],
+      ["EXPERIENCIA", "5+ AÑOS ACTIVO"],
+      ["ENFOQUE", "AUTOMATIZACIÓN E IA"],
+      ["BASE", "COLOMBIA"],
       ["ESTADO", "DISPONIBLE AHORA"],
     ],
     blocks: {
-      eyebrow: "QUÉ HAGO · 3 BLOQUES",
-      title: "Sistemas creativos escalables, no simples piezas sueltas.",
-      text: "Cada bloque opera de forma independiente, pero juntos forman el motor visual de tu tienda.",
+      eyebrow: "QUÉ HAGO · 4 PILARES",
+      title: "Sistemas operativos escalables, no simples piezas sueltas.",
+      text: "Cada bloque opera de forma independiente, pero juntos forman el motor operativo de tu negocio.",
       items: [
-        "Creación de Contenido con IA",
-        "Producción audiovisual",
-        "Automatización de contenido",
+        "Automatización con n8n & Make",
+        "Agentes de IA & Chatbots",
+        "Automatización de CRM & Leads",
+        "Sales Ops & Reporting",
       ],
-      connected: "Activos Visuales & Frameworks",
+      connected: "Automatizaciones & Integraciones",
     },
     services: {
       eyebrow: "SERVICIOS · 4 PILARES",
-      title: <>Cuatro bloques. <em>Un sistema.</em></>,
-      text: "Cada pilar funciona por sí solo, pero están pensados para conectarse en un motor visual para tu tienda.",
+      title: <>Cuatro pilares. <em>Un sistema.</em></>,
+      text: "Cada pilar funciona por sí solo, pero están pensados para conectarse en un sistema operativo para tu negocio.",
       selected: "Proyectos implementados",
       items: ES_SERVICES,
       viewProjects: "Ver proyectos",
       closeModal: "Cerrar",
     },
     portfolio: {
-      eyebrow: "PORTFOLIO · TRABAJOS SELECCIONADOS",
-      title: "Mixed media, sistemas visuales y piezas listas para campaña.",
+      eyebrow: "PORTAFOLIO · TRABAJOS SELECCIONADOS",
+      title: "Flujos escalables, integraciones de IA y reportes en tiempo real.",
       all: "Ver todos",
       items: [
-        ["Skincare: Hero set", "Imagen IA", "large"],
-        ["Marca de café: spot :30", "Video Ad", "wide"],
-        ["Tenis: carrusel estático", "Creatividad", "small"],
-        ["Suplemento DTC: LP", "Landing", "small"],
-        ["Workflow: 12 variaciones / hour", "Automatización", "wide"],
-        ["Apparel: pack lifestyle", "Imagen IA", "small"],
-        ["Hogar: Reels x6", "Video corto", "small"],
+        ["Automatización de Operaciones", "Flujo n8n", "large"],
+        ["Chatbots de Ventas en WhatsApp", "AI Agent", "wide"],
+        ["Embudo de Ventas en GoHighLevel", "CRM", "small"],
+        ["Reporting y Sales Ops", "Dashboard", "small"],
+        ["Sincronización en Tiempo Real", "Automatización", "wide"],
+        ["Flujo de Nutrición de Clientes", "Automatización", "small"],
+        ["Dashboard de Pauta Digital", "Reporting", "small"],
       ],
     },
     cta: {
-      title: "Convierte tus conceptos en un sistema de contenido que trabaje 24/7.",
-      text: "Diagnóstico creativo gratis · 20 minutos · sin compromiso",
+      title: "Automatiza tu negocio y crea un sistema operativo que trabaje 24/7.",
+      text: "Diagnóstico de automatización gratis · 20 minutos · sin compromiso",
       button: "Empezar",
     },
     contact: {
-      eyebrow: "CONTACTO · CAPTURA DE LEAD",
-      title: <>Cuéntanos qué vendes. <em>Nosotros creamos el contenido.</em></>,
-      text: "Envíanos un brief corto y te devolvemos un diagnóstico creativo gratis de 20 min: qué falta, qué optimizar y qué producir primero.",
-      email: "danna.28.olarte@gmail.com",
+      eyebrow: "CONTACTO · DIAGNÓSTICO DE AUTOMATIZACIÓN",
+      title: <>Cuéntanos sobre tu negocio. <em>Nosotros lo automatizamos.</em></>,
+      text: "Envíanos un mensaje y te devolvemos un diagnóstico de automatización gratis de 20 min: qué optimizar, qué integrar y qué automatizar primero.",
+      email: "joseph.clavijo.dev@gmail.com",
       whatsapp: "WhatsApp: +57 313 612 9197",
       response: "Respuesta habitual en ~24h, días hábiles",
       fields: {
@@ -308,29 +310,30 @@ const COPY: Record<Lang, Copy> = {
         company: "Nombre de tu marca",
         whatsapp: "+57 313 612 9197",
         web: "pagurai.com · @marca",
-        business: "Skincare DTC, café especialidad, etc.",
+        business: "E-commerce, Agencia, SaaS, etc.",
         message: "Cuéntanos qué necesitas...",
       },
-      serviceOptions: ["Creación de contenido con IA", "Producción audiovisual", "Automatización de contenido"],
+      serviceOptions: ["Automatización con n8n & Make", "Agentes de IA & Chatbots", "Automatización de CRM & Leads", "Sales Ops & Reporting"],
     },
     footer: "HERO → SOBRE MÍ → SERVICIOS → PORTFOLIO → CONTACTO",
   },
 };
 
 const BLOCK_IMAGES = [
-  "/assets/images/content/Image creator.webp",
-  "/assets/images/content/Video Prodcution.webp",
-  "/assets/images/content/Content automation.webp",
+  "/assets/images/projects/Automatización de Operaciones.webp",
+  "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
+  "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
+  "/assets/images/projects/Reporting y Sales Ops.webp",
 ];
 
 const PORTFOLIO_IMAGES = [
-  "/assets/images/content/Fashion_ Hero set AI Image.webp",
-  "/assets/images/content/Coffee brand.webp",
-  "/assets/images/content/Sneakers Carrusel.webp",
-  "/assets/images/content/DTC supplement.webp",
-  "/assets/images/content/workflow 12 variations.webp",
-  "/assets/images/content/Apparel lifestyle pack.webp",
-  "/assets/images/content/Home goods.webp",
+  "/assets/images/projects/Automatización de Operaciones.webp",
+  "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
+  "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
+  "/assets/images/projects/Reporting y Sales Ops.webp",
+  "/assets/images/projects/Sincronización en Tiempo Real.webp",
+  "/assets/images/projects/workflow-go-high-level.webp",
+  "/assets/images/projects/Dashboard 2 meta ads.webp",
 ];
 
 
@@ -576,8 +579,8 @@ export default function PaguraiLanding() {
 
       <header className="site-header">
         <nav className="cyber-nav" aria-label={copy.nav.aria} onPointerMove={moveGlow}>
-          <a className="brand-mark" href="#inicio" aria-label="Danna Olarte home">
-            <span style={{ fontFamily: "var(--font-display)", fontStyle: "italic", fontWeight: 700, textTransform: "uppercase", color: "var(--accent-color)", fontSize: "20px", letterSpacing: "0.05em" }}>Danna Olarte</span>
+          <a className="brand-mark" href="#inicio" aria-label="Joseph Clavijo home">
+            <span style={{ fontFamily: "var(--font-display)", fontStyle: "italic", fontWeight: 700, textTransform: "uppercase", color: "var(--accent-color)", fontSize: "20px", letterSpacing: "0.05em" }}>Joseph Clavijo</span>
           </a>
 
           <div id="primary-navigation" className={`nav-links ${menuOpen ? "open" : ""}`}>
@@ -651,7 +654,7 @@ export default function PaguraiLanding() {
             <div className="visual-stage">
               <div className="reel-card main-reel" style={{ background: "rgba(18, 18, 26, 0.6)", overflow: "hidden", position: "relative" }}>
                 <Image
-                  src="/assets/images/projects/WORFLOW-CAR.webp"
+                  src="/assets/images/projects/automatizacion-joseph.webp"
                   alt="Automation Workflow"
                   fill
                   style={{ objectFit: "cover" }}
@@ -674,7 +677,7 @@ export default function PaguraiLanding() {
           </aside>
         </section>
 
-        <section className="proof-strip" aria-label="Danna Olarte facts">
+        <section className="proof-strip" aria-label="Joseph Clavijo facts">
           {copy.proof.map(([k, v]) => (
             <div key={k}>
               <span>{k}</span>
@@ -687,7 +690,7 @@ export default function PaguraiLanding() {
         <section className="section-block" id="sobre-mi">
           <div className="section-head" style={{ marginBottom: "40px" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-              <span className="eyebrow" style={{ marginBottom: "24px" }}>Danna Olarte</span>
+              <span className="eyebrow" style={{ marginBottom: "24px" }}>Joseph Clavijo</span>
               <h2 className="about-title-styled" style={{ margin: 0 }}>
                 {lang === "es" ? "SOBRE MÍ" : "ABOUT ME"}
               </h2>
@@ -699,8 +702,8 @@ export default function PaguraiLanding() {
             <div className="glow-card about-portrait-card" onPointerMove={moveGlow}>
               <div className="about-portrait-wrapper">
                 <Image
-                  src="/assets/images/projects/DannaOlarte.webp"
-                  alt="Danna Olarte"
+                  src="/assets/images/projects/joseph_profile.webp"
+                  alt="Joseph Clavijo"
                   fill
                   className="about-portrait-img"
                   style={{ objectFit: "cover" }}
@@ -716,8 +719,8 @@ export default function PaguraiLanding() {
                 <div className="glow-card about-desc-card" onPointerMove={moveGlow}>
                   <p className="about-text">
                     {lang === "es"
-                      ? "Como Diseñadora Creativa de IA, me especializo en transformar ideas en experiencias visuales de alto impacto combinando creatividad, narrativa (storytelling) e inteligencia artificial. Diseño sistemas creativos escalables que ayudan a las marcas a producir contenido atractivo, consistente y visualmente impactante en múltiples plataformas digitales."
-                      : "As an AI Creative Designer, I specialize in transforming ideas into high-impact visual experiences through the combination of creativity, storytelling, and artificial intelligence. I design scalable creative systems that help brands produce engaging, consistent, and visually compelling content across multiple digital platforms."}
+                      ? "Como especialista en automatización de operaciones y crecimiento, me enfoco en construir sistemas escalables que optimizan flujos de trabajo, eliminan tareas repetitivas y reducen la fricción operativa. Diseño e integro arquitecturas digitales con n8n, CRM y plataformas de IA para potenciar el desarrollo de ventas y proveer dashboards comerciales en tiempo real que permiten a los equipos escalar eficientemente."
+                      : "As an operations and growth automation specialist, I focus on building scalable systems that optimize workflows, eliminate repetitive tasks, and reduce operational friction. I design and integrate digital architectures with n8n, CRM, and AI platforms to boost sales development and provide real-time business dashboards that enable teams to scale efficiently."}
                   </p>
                 </div>
 
@@ -725,7 +728,7 @@ export default function PaguraiLanding() {
                 <div className="glow-card about-exp-card" onPointerMove={moveGlow}>
                   <div className="exp-bg-grid" />
                   <div className="exp-content">
-                    <span className="exp-num">2</span>
+                    <span className="exp-num">5+</span>
                     <span className="exp-label">
                       {lang === "es" ? "años de experiencia" : "years of experience"}
                     </span>
@@ -735,35 +738,35 @@ export default function PaguraiLanding() {
 
               {/* Bottom Row */}
               <div className="about-row-bottom">
-                {/* Visual Assets Card */}
+                {/* Integrations Card */}
                 <div className="glow-card about-mini-card" onPointerMove={moveGlow}>
-                  <h3 className="about-mini-title">{lang === "es" ? "Activos Visuales" : "Visual Assets"}</h3>
+                  <h3 className="about-mini-title">{lang === "es" ? "Integraciones" : "Integrations"}</h3>
                   <p className="about-mini-desc">
                     {lang === "es"
-                      ? "Generación de fotos de producto, lifestyle y variaciones de campaña listas para tus canales."
-                      : "High-impact product, lifestyle and campaign variations ready for your digital channels."}
+                      ? "Sincronización en tiempo real de Shopify, Stripe, CRMs y bases de datos."
+                      : "Real-time synchronization of Shopify, Stripe, CRMs, and databases."}
                   </p>
                 </div>
 
-                {/* AI Video Card */}
+                {/* AI Agents Card */}
                 <div className="glow-card about-mini-card" onPointerMove={moveGlow}>
-                  <h3 className="about-mini-title">{lang === "es" ? "Video con IA" : "AI Video"}</h3>
+                  <h3 className="about-mini-title">{lang === "es" ? "AI Agents" : "AI Agents"}</h3>
                   <p className="about-mini-desc">
                     {lang === "es"
-                      ? "Edición y generación de video inteligente optimizado para engagement en TikTok, Reels y Shorts."
-                      : "Smart video editing and generation optimized for engagement on TikTok, Reels and Shorts."}
+                      ? "Chatbots inteligentes en WhatsApp para soporte al cliente y ventas automatizadas."
+                      : "Intelligent chatbots on WhatsApp for customer support and automated sales."}
                   </p>
                 </div>
 
-                {/* Creative Systems Card */}
+                {/* Notifications Card */}
                 <div className="glow-card about-mini-card wide-bottom-card" onPointerMove={moveGlow}>
                   <h3 className="about-mini-title">
-                    {lang === "es" ? "Sistemas Creativos" : "Creative Systems"}
+                    {lang === "es" ? "Notificaciones & Alertas" : "Notifications & Alerts"}
                   </h3>
                   <p className="about-mini-desc">
                     {lang === "es"
-                      ? "Guías de estilo asistidas por IA y frameworks de diseño reutilizables para mantener la coherencia de marca."
-                      : "AI-assisted style guides and reusable design frameworks to maintain total brand consistency."}
+                      ? "Alertas automatizadas de inventario, facturas legales PDF y logística enviadas por Slack o WhatsApp."
+                      : "Automated inventory alerts, legal PDF invoices, and logistics sent via Slack or WhatsApp."}
                   </p>
                   <div style={{ position: "absolute", bottom: "18px", right: "18px", opacity: 0.12 }}>
                     <Workflow size={32} style={{ color: "var(--accent-color)" }} />
@@ -777,80 +780,88 @@ export default function PaguraiLanding() {
           <div className="about-tech-strip">
             <div className="marquee-track">
               {/* Set 1 */}
-              <div className="tech-icon-item" title="Texto 1">
-                <img src="/assets/images/projects/Texto (1).webp" alt="Texto 1" className="tech-logo-img" />
+              <div className="tech-icon-item" title="n8n">
+                <img src="/assets/images/projects/N8N.webp" alt="n8n" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 2">
-                <img src="/assets/images/projects/Texto (2).webp" alt="Texto 2" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Zapier">
+                <img src="/assets/images/projects/Zapier.webp" alt="Zapier" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 3">
-                <img src="/assets/images/projects/Texto (3).webp" alt="Texto 3" className="tech-logo-img" />
+              <div className="tech-icon-item" title="GoHighLevel">
+                <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 4">
-                <img src="/assets/images/projects/Texto (4).webp" alt="Texto 4" className="tech-logo-img" />
-              </div>
-              <div className="tech-icon-item" title="Texto">
-                <img src="/assets/images/projects/Texto.webp" alt="Texto" className="tech-logo-img" />
+              <div className="tech-icon-item" title="HubSpot">
+                <img src="/assets/images/projects/Hubspot(2).webp" alt="HubSpot" className="tech-logo-img" />
               </div>
               <div className="tech-icon-item" title="Claude">
                 <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="Google">
+                <img src="/assets/images/projects/Logo (Google).webp" alt="Google" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="Meta">
+                <img src="/assets/images/projects/Logo (Meta).webp" alt="Meta" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="GitHub">
+                <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="Codex">
+                <img src="/assets/images/projects/Codex.webp" alt="Codex" className="tech-logo-img" />
               </div>
               {/* Set 2 */}
-              <div className="tech-icon-item" title="Texto 1">
-                <img src="/assets/images/projects/Texto (1).webp" alt="Texto 1" className="tech-logo-img" />
+              <div className="tech-icon-item" title="n8n">
+                <img src="/assets/images/projects/N8N.webp" alt="n8n" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 2">
-                <img src="/assets/images/projects/Texto (2).webp" alt="Texto 2" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Zapier">
+                <img src="/assets/images/projects/Zapier.webp" alt="Zapier" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 3">
-                <img src="/assets/images/projects/Texto (3).webp" alt="Texto 3" className="tech-logo-img" />
+              <div className="tech-icon-item" title="GoHighLevel">
+                <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 4">
-                <img src="/assets/images/projects/Texto (4).webp" alt="Texto 4" className="tech-logo-img" />
-              </div>
-              <div className="tech-icon-item" title="Texto">
-                <img src="/assets/images/projects/Texto.webp" alt="Texto" className="tech-logo-img" />
+              <div className="tech-icon-item" title="HubSpot">
+                <img src="/assets/images/projects/Hubspot(2).webp" alt="HubSpot" className="tech-logo-img" />
               </div>
               <div className="tech-icon-item" title="Claude">
                 <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="Google">
+                <img src="/assets/images/projects/Logo (Google).webp" alt="Google" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="Meta">
+                <img src="/assets/images/projects/Logo (Meta).webp" alt="Meta" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="GitHub">
+                <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" className="tech-logo-img" />
+              </div>
+              <div className="tech-icon-item" title="Codex">
+                <img src="/assets/images/projects/Codex.webp" alt="Codex" className="tech-logo-img" />
               </div>
               {/* Set 3 */}
-              <div className="tech-icon-item" title="Texto 1">
-                <img src="/assets/images/projects/Texto (1).webp" alt="Texto 1" className="tech-logo-img" />
+              <div className="tech-icon-item" title="n8n">
+                <img src="/assets/images/projects/N8N.webp" alt="n8n" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 2">
-                <img src="/assets/images/projects/Texto (2).webp" alt="Texto 2" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Zapier">
+                <img src="/assets/images/projects/Zapier.webp" alt="Zapier" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 3">
-                <img src="/assets/images/projects/Texto (3).webp" alt="Texto 3" className="tech-logo-img" />
+              <div className="tech-icon-item" title="GoHighLevel">
+                <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 4">
-                <img src="/assets/images/projects/Texto (4).webp" alt="Texto 4" className="tech-logo-img" />
-              </div>
-              <div className="tech-icon-item" title="Texto">
-                <img src="/assets/images/projects/Texto.webp" alt="Texto" className="tech-logo-img" />
+              <div className="tech-icon-item" title="HubSpot">
+                <img src="/assets/images/projects/Hubspot(2).webp" alt="HubSpot" className="tech-logo-img" />
               </div>
               <div className="tech-icon-item" title="Claude">
                 <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
               </div>
-              {/* Set 4 */}
-              <div className="tech-icon-item" title="Texto 1">
-                <img src="/assets/images/projects/Texto (1).webp" alt="Texto 1" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Google">
+                <img src="/assets/images/projects/Logo (Google).webp" alt="Google" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 2">
-                <img src="/assets/images/projects/Texto (2).webp" alt="Texto 2" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Meta">
+                <img src="/assets/images/projects/Logo (Meta).webp" alt="Meta" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 3">
-                <img src="/assets/images/projects/Texto (3).webp" alt="Texto 3" className="tech-logo-img" />
+              <div className="tech-icon-item" title="GitHub">
+                <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Texto 4">
-                <img src="/assets/images/projects/Texto (4).webp" alt="Texto 4" className="tech-logo-img" />
-              </div>
-              <div className="tech-icon-item" title="Texto">
-                <img src="/assets/images/projects/Texto.webp" alt="Texto" className="tech-logo-img" />
-              </div>
-              <div className="tech-icon-item" title="Claude">
-                <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Codex">
+                <img src="/assets/images/projects/Codex.webp" alt="Codex" className="tech-logo-img" />
               </div>
             </div>
           </div>
@@ -890,9 +901,10 @@ export default function PaguraiLanding() {
                   <div className="block-card-scrim" aria-hidden="true" />
                   <div className="block-card-head">
                     <span className="card-num">{String(index + 1).padStart(2, "0")}</span>
-                    {index === 0 && <Sparkles size={22} />}
-                    {index === 1 && <Zap size={22} />}
-                    {index === 2 && <Workflow size={22} />}
+                    {index === 0 && <Workflow size={22} />}
+                    {index === 1 && <Sparkles size={22} />}
+                    {index === 2 && <Zap size={22} />}
+                    {index === 3 && <BarChart3 size={22} />}
                   </div>
                   <h3>{block}</h3>
                 </article>
@@ -1025,7 +1037,7 @@ export default function PaguraiLanding() {
       </main>
 
       <footer className="site-footer">
-        <span>DANNA OLARTE © 2026</span>
+        <span>JOSEPH CLAVIJO © 2026</span>
         <span>{copy.footer}</span>
       </footer>
 
@@ -1073,11 +1085,12 @@ export default function PaguraiLanding() {
                         {lang === "es" ? "HERRAMIENTAS USADAS" : "TOOLS USED"}
                       </span>
                       <div style={{ display: "flex", gap: "16px", alignItems: "center", marginTop: "10px", flexWrap: "wrap" }}>
-                        <img src="/assets/images/projects/Texto.webp" alt="Tool" style={{ height: "38px", width: "auto" }} />
-                        <img src="/assets/images/projects/Texto (1).webp" alt="Tool" style={{ height: "38px", width: "auto" }} />
-                        <img src="/assets/images/projects/Texto (2).webp" alt="Tool" style={{ height: "38px", width: "auto" }} />
-                        <img src="/assets/images/projects/Texto (3).webp" alt="Tool" style={{ height: "38px", width: "auto" }} />
-                        <img src="/assets/images/projects/Texto (4).webp" alt="Tool" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/N8N.webp" alt="n8n" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Hubspot(2).webp" alt="HubSpot" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Logo Antigravity.webp" alt="Antigravity" style={{ height: "38px", width: "auto" }} />
                       </div>
                     </div>
 

@@ -3,7 +3,7 @@ import {
   Workflow,
   Zap,
   Sparkles,
-  CheckCircle2
+  BarChart3,
 } from "lucide-react";
 
 export type ProjectDetail = {
@@ -32,114 +32,152 @@ export type Service = {
 export const EN_SERVICES: Service[] = [
   {
     number: "01",
-    title: "AI CONTENT CREATION",
+    title: "AUTOMATION WITH N8N & MAKE",
     description:
-      "AI content systems to generate images, videos, and campaign assets faster, maintaining visual consistency and reducing production costs.",
-    tags: ["AI Content", "Ecommerce", "Meta Ads", "ComfyUI"],
-    icon: Sparkles,
+      "Design and optimization of scalable workflows that connect your favorite tools to eliminate repetitive tasks and reduce operational costs.",
+    tags: ["n8n", "Make", "APIs", "Integrations"],
+    icon: Workflow,
     accent: "blue",
-    banner: "/assets/images/projects/Banner (IA creation).webp",
+    banner: "/assets/images/projects/Automatización-n8n_make(BANNER)Ingles.webp",
     projects: [
-      "Product content generation",
-      "Creative variations for campaigns",
-      "On-brand lifestyle content"
+      "Tool Integration",
+      "Report Automation",
+      "Custom Workflows"
     ],
     projectsDetail: [
       {
-        company: "Danna Olarte",
-        title: "AI Catalog Shoot",
-        description: "Generated catalog and lifestyle assets for an apparel brand, reducing studio shoot costs.",
-        image: "/assets/images/projects/service0-project0.webp",
+        company: "Joseph Clavijo",
+        title: "Operations Automation",
+        description: "Creation of robust workflows connecting CRMs, databases, and messaging systems.",
+        image: "/assets/images/projects/Automatización de Operaciones.webp",
         images: [
-          "/assets/images/projects/Imagen 1 Pagu.webp",
-          "/assets/images/projects/Imagen 2 Pagu.webp",
-          "/assets/images/projects/Imagen 3 Pagu.webp",
-          "/assets/images/projects/Imagen 4 Pagu.webp",
-          "/assets/images/projects/Imagen 5  Pagu.webp"
+          "/assets/images/projects/n8n-1.webp",
+          "/assets/images/projects/n8n-2.webp",
+          "/assets/images/projects/n8n-3.webp"
         ]
       },
       {
-        company: "Danna Olarte",
-        title: "Creative Variations",
-        description: "High-volume variations for social media ad testing, maintaining brand style.",
-        image: "/assets/images/projects/service0-project1.webp",
+        company: "Joseph Clavijo",
+        title: "Real-time Synchronization",
+        description: "Bi-directional connection between Shopify, Stripe, and CRMs to update data instantly.",
+        image: "/assets/images/projects/Sincronización en Tiempo Real.webp",
         images: [
-          "/assets/images/projects/velo-slide-1.webp",
-          "/assets/images/projects/velo-slide-2.webp",
-          "/assets/images/projects/velo-slide-3.webp",
-          "/assets/images/projects/velo-slide-4.webp",
-          "/assets/images/projects/velo-slide-5.webp"
+          "/assets/images/projects/n8n-1.webp",
+          "/assets/images/projects/n8n-2.webp",
+          "/assets/images/projects/n8n-3.webp"
         ]
       }
     ],
   },
   {
     number: "02",
-    title: "AUDIOVISUAL PRODUCTION",
+    title: "AI AGENTS & CHATBOTS",
     description:
-      "Video production for e-commerce and digital campaigns, creating dynamic, engaging, and optimized assets to capture attention and improve creative performance.",
-    tags: ["Video Production", "Ecommerce", "Meta Ads", "Motion"],
-    icon: Zap,
+      "Development of virtual assistants and intelligent chatbots integrated with WhatsApp and CRMs to automate customer support and boost sales.",
+    tags: ["AI Agents", "Chatbots", "WhatsApp API", "OpenAI"],
+    icon: Sparkles,
     accent: "pink",
-    banner: "/assets/images/projects/Banner-Video(Ingles).webp",
+    banner: "/assets/images/projects/AgentesdeIA&Chatbots(Ingles).webp",
     projects: [
-      "Product & lifestyle videos",
-      "Video creatives for campaigns",
-      "Editing, motion & content variations"
+      "Interactive WhatsApp Chatbots",
+      "Smart Customer Agents",
+      "Automated Lead Qualification"
     ],
     projectsDetail: [
       {
-        company: "Danna Olarte",
-        title: "Cinematic Hooks",
-        description: "Dynamic video hooks combining stock footage, graphic design and AI voice overs.",
-        image: "/assets/images/projects/service1-project0.webp",
-        video: "/assets/images/projects/Video Producción (Amper).webm"
+        company: "Joseph Clavijo",
+        title: "WhatsApp Sales Chatbots",
+        description: "Automated WhatsApp assistant capable of qualifying leads and booking appointments in the CRM.",
+        image: "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
+        images: [
+          "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
+          "/assets/images/projects/AgentesdeIA&Chatbots.webp"
+        ]
       },
       {
-        company: "Danna Olarte",
-        title: "TikTok Native Spot",
-        description: "High-converting UGC-style short-form video edit optimized for TikTok and Reels.",
-        image: "/assets/images/projects/Miniatura Colombiana.webp",
-        video: "/assets/images/projects/Colombiana Campaña 1_1 (1).webm"
+        company: "Joseph Clavijo",
+        title: "Intelligent Support Agent",
+        description: "Conversational agent trained on the company's knowledge base to resolve common queries.",
+        image: "/assets/images/projects/AgentesdeIA&Chatbots.webp",
+        images: [
+          "/assets/images/projects/AgentesdeIA&Chatbots.webp",
+          "/assets/images/projects/Chatbots(Portada).webp"
+        ]
       }
     ],
   },
   {
     number: "03",
-    title: "CONTENT AUTOMATION",
+    title: "CRM & LEAD AUTOMATION",
     description:
-      "Automating creative variation production and asset distribution across your channels using Magnific AI and ComfyUI.",
-    tags: ["Magnific AI", "ComfyUI", "API Integrations", "Content Scaling"],
-    icon: Workflow,
+      "Implementation and optimization of GoHighLevel, HubSpot, and other CRMs to manage prospects, automate follow-ups, and provide real-time business reports.",
+    tags: ["CRM", "GoHighLevel", "HubSpot", "Lead Nurturing"],
+    icon: Zap,
     accent: "blue",
-    banner: "/assets/images/projects/Banner-Automatización(Ingles).webp",
+    banner: "/assets/images/projects/Banner CRM (Ingles).webp",
     projects: [
-      "Multi-channel campaign asset scaling",
-      "Automated design variation production",
-      "Dynamic content distribution workflows"
+      "Automated Sales Funnel",
+      "Real-time Sales Reporting",
+      "Lead Nurturing & Email Marketing"
     ],
     projectsDetail: [
       {
-        company: "Danna Olarte",
-        title: "Batch Banner Creator",
-        description: "AI-assisted workflow that generates and crops promotional banners across multiple aspect ratios.",
-        image: "/assets/images/projects/Shampoo Prai.webp",
-        video: "/assets/images/projects/0807.webm"
+        company: "Joseph Clavijo",
+        title: "GoHighLevel Sales Funnel",
+        description: "Comprehensive GHL setup to capture leads, send email sequences, and automate the sales funnel.",
+        image: "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
+        images: [
+          "/assets/images/projects/ghl-1.webp",
+          "/assets/images/projects/ghl-2.webp",
+          "/assets/images/projects/ghl-3.webp",
+          "/assets/images/projects/workflow-go-high-level.webp"
+        ]
       },
       {
-        company: "Danna Olarte",
-        title: "Multi-channel Scheduler",
-        description: "Automated distribution system sending creative variants directly to social channels.",
-        image: "/assets/images/projects/service2-project1.webp",
+        company: "Joseph Clavijo",
+        title: "Sales Reporting & Dashboards",
+        description: "Synchronization of CRM and Meta Ads data into interactive real-time dashboards.",
+        image: "/assets/images/projects/Reporting y Sales Ops.webp",
         images: [
-          "/assets/images/projects/Comfy (1).webp",
-          "/assets/images/projects/Comfy (2).webp",
-          "/assets/images/projects/Comfy (3).webp",
-          "/assets/images/projects/Comfy (4).webp",
-          "/assets/images/projects/Comfy (5).webp",
-          "/assets/images/projects/Comfy (7).webp",
-          "/assets/images/projects/ComfyUI_temp_inrkh_00004_.webp",
-          "/assets/images/projects/ComfyUI-image_4_00001_.webp"
+          "/assets/images/projects/Dashboard 2 meta ads.webp",
+          "/assets/images/projects/Reporting y Sales Ops.webp"
+        ]
+      }
+    ],
+  },
+  {
+    number: "04",
+    title: "SALES OPS & REPORTING",
+    description:
+      "Synchronization of CRM and Meta Ads data into interactive real-time dashboards to optimize commercial performance and make data-driven decisions.",
+    tags: ["Sales Ops", "Reporting", "Dashboards", "Meta Ads"],
+    icon: BarChart3,
+    accent: "blue",
+    banner: "/assets/images/projects/Sales Ops & Reporting(Ingles).webp",
+    projects: [
+      "Real-time Interactive Dashboards",
+      "Automated Reporting Systems",
+      "Funnel & Conversion Analysis"
+    ],
+    projectsDetail: [
+      {
+        company: "Joseph Clavijo",
+        title: "Sales & Ads Dashboards",
+        description: "Integration of acquisition and conversion metrics into a centralized interactive panel.",
+        image: "/assets/images/projects/Dashboard 2 meta ads.webp",
+        images: [
+          "/assets/images/projects/Dashboard 2 meta ads.webp",
+          "/assets/images/projects/Reporting y Sales Ops(Ingles).webp"
+        ]
+      },
+      {
+        company: "Joseph Clavijo",
+        title: "Automated Sales Reporting",
+        description: "Daily and weekly performance reports sent directly to Slack or email.",
+        image: "/assets/images/projects/Reporting y Sales Ops(Ingles).webp",
+        images: [
+          "/assets/images/projects/Reporting y Sales Ops(Ingles).webp",
+          "/assets/images/projects/Dashboard 2 meta ads.webp"
         ]
       }
     ],
@@ -149,114 +187,152 @@ export const EN_SERVICES: Service[] = [
 export const ES_SERVICES: Service[] = [
   {
     number: "01",
-    title: "CREACIÓN DE CONTENIDO CON IA",
+    title: "AUTOMATIZACIÓN CON N8N & MAKE",
     description:
-      "Sistemas de contenido con IA para crear imágenes, videos y piezas de campaña más rápido, manteniendo consistencia visual y reduciendo costos de producción.",
-    tags: ["Contenido IA", "Ecommerce", "Meta Ads", "ComfyUI"],
-    icon: Sparkles,
+      "Diseño y optimización de flujos de trabajo escalables que conectan tus herramientas favoritas para eliminar tareas repetitivas y reducir costos operativos.",
+    tags: ["n8n", "Make", "APIs", "Integraciones"],
+    icon: Workflow,
     accent: "blue",
-    banner: "/assets/images/projects/Banner (IA creation).webp",
+    banner: "/assets/images/projects/Automatización-n8n_make(BANNER).webp",
     projects: [
-      "Generación de contenido de producto",
-      "Variaciones creativas para campañas",
-      "Contenido lifestyle on-brand"
+      "Integración de herramientas",
+      "Automatización de reportes",
+      "Flujos de trabajo personalizados"
     ],
     projectsDetail: [
       {
-        company: "Danna Olarte",
-        title: "Sesión de Campaña IA",
-        description: "Generación de imágenes lifestyle de producto para catálogo, reduciendo costos de sesiones de fotos.",
-        image: "/assets/images/projects/service0-project0.webp",
+        company: "Joseph Clavijo",
+        title: "Automatización de Operaciones",
+        description: "Creación de flujos robustos que conectan CRMs, bases de datos y sistemas de mensajería.",
+        image: "/assets/images/projects/Automatización de Operaciones.webp",
         images: [
-          "/assets/images/projects/Imagen 1 Pagu.webp",
-          "/assets/images/projects/Imagen 2 Pagu.webp",
-          "/assets/images/projects/Imagen 3 Pagu.webp",
-          "/assets/images/projects/Imagen 4 Pagu.webp",
-          "/assets/images/projects/Imagen 5  Pagu.webp"
+          "/assets/images/projects/n8n-1.webp",
+          "/assets/images/projects/n8n-2.webp",
+          "/assets/images/projects/n8n-3.webp"
         ]
       },
       {
-        company: "Danna Olarte",
-        title: "Variaciones Creativas",
-        description: "Variaciones de alto volumen para testing en pauta digital, manteniendo la estética de marca.",
-        image: "/assets/images/projects/service0-project1.webp",
+        company: "Joseph Clavijo",
+        title: "Sincronización en Tiempo Real",
+        description: "Conexión bidireccional entre Shopify, Stripe y CRMs para actualizar datos al instante.",
+        image: "/assets/images/projects/Sincronización en Tiempo Real.webp",
         images: [
-          "/assets/images/projects/velo-slide-1.webp",
-          "/assets/images/projects/velo-slide-2.webp",
-          "/assets/images/projects/velo-slide-3.webp",
-          "/assets/images/projects/velo-slide-4.webp",
-          "/assets/images/projects/velo-slide-5.webp"
+          "/assets/images/projects/n8n-1.webp",
+          "/assets/images/projects/n8n-2.webp",
+          "/assets/images/projects/n8n-3.webp"
         ]
       }
     ],
   },
   {
     number: "02",
-    title: "PRODUCCIÓN AUDIOVISUAL",
+    title: "AGENTES DE IA & CHATBOTS",
     description:
-      "Producción de video para ecommerce y campañas digitales, creando piezas dinámicas, atractivas y optimizadas para captar atención y mejorar el rendimiento creativo.",
-    tags: ["Video Production", "Ecommerce", "Meta Ads", "Motion"],
-    icon: Zap,
+      "Desarrollo de asistentes virtuales y chatbots inteligentes integrados con WhatsApp y CRMs para automatizar la atención al cliente y potenciar las ventas.",
+    tags: ["AI Agents", "Chatbots", "WhatsApp API", "OpenAI"],
+    icon: Sparkles,
     accent: "pink",
-    banner: "/assets/images/projects/Banner (Video).webp",
+    banner: "/assets/images/projects/AgentesdeIA&Chatbots.webp",
     projects: [
-      "Videos de producto y lifestyle",
-      "Creatividades en video para campañas",
-      "Edición, motion y variaciones de contenido"
+      "Chatbots interactivos en WhatsApp",
+      "Agentes de atención inteligente",
+      "Calificación automática de leads"
     ],
     projectsDetail: [
       {
-        company: "Danna Olarte",
-        title: "Hooks Cinemáticos",
-        description: "Hooks de video dinámicos combinando clips de video, diseño gráfico y voces generadas con IA.",
-        image: "/assets/images/projects/service1-project0.webp",
-        video: "/assets/images/projects/Video Producción (Amper).webm"
+        company: "Joseph Clavijo",
+        title: "Chatbots de Ventas en WhatsApp",
+        description: "Asistente automatizado en WhatsApp capaz de calificar prospectos y agendar citas en el CRM.",
+        image: "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
+        images: [
+          "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
+          "/assets/images/projects/AgentesdeIA&Chatbots.webp"
+        ]
       },
       {
-        company: "Danna Olarte",
-        title: "Spot Nativo de TikTok",
-        description: "Edición dinámica en formato UGC de alta conversión optimizado para TikTok y Reels.",
-        image: "/assets/images/projects/Miniatura Colombiana.webp",
-        video: "/assets/images/projects/Colombiana Campaña 1_1 (1).webm"
+        company: "Joseph Clavijo",
+        title: "Agente Inteligente de Soporte",
+        description: "Agente conversacional entrenado con la base de conocimientos de la empresa para resolver dudas comunes.",
+        image: "/assets/images/projects/AgentesdeIA&Chatbots.webp",
+        images: [
+          "/assets/images/projects/AgentesdeIA&Chatbots.webp",
+          "/assets/images/projects/Chatbots(Portada).webp"
+        ]
       }
     ],
   },
   {
     number: "03",
-    title: "AUTOMATIZACIÓN DE CONTENIDO",
+    title: "AUTOMATIZACIÓN DE CRM & LEADS",
     description:
-      "Automatización de la producción de variaciones creativas y escalamiento de activos usando inteligencia artificial y Magnific AI.",
-    tags: ["Magnific AI", "ComfyUI", "APIs", "Escalamiento de Contenido"],
-    icon: Workflow,
+      "Implementación y optimización de GoHighLevel, HubSpot y otros CRMs para gestionar prospectos, automatizar el seguimiento y proveer reportes comerciales en tiempo real.",
+    tags: ["CRM", "GoHighLevel", "HubSpot", "Lead Nurturing"],
+    icon: Zap,
     accent: "blue",
-    banner: "/assets/images/projects/Automatización.webp",
+    banner: "/assets/images/projects/Banner CRM.webp",
     projects: [
-      "Escalamiento automático de assets omnicanal",
-      "Generación automatizada de piezas de diseño",
-      "Flujos automatizados de publicación y distribución"
+      "Embudo de ventas automatizado",
+      "Reporting comercial en tiempo real",
+      "Lead Nurturing & Email Marketing"
     ],
     projectsDetail: [
       {
-        company: "Danna Olarte",
-        title: "Creador de Banners en Lote",
-        description: "Flujo asistido por IA para generar y recortar banners promocionales en múltiples relaciones de aspecto.",
-        image: "/assets/images/projects/Shampoo Prai.webp",
-        video: "/assets/images/projects/0807.webm"
+        company: "Joseph Clavijo",
+        title: "Embudo de Ventas en GoHighLevel",
+        description: "Configuración integral de GHL para capturar leads, enviar secuencias de correos y automatizar el embudo comercial.",
+        image: "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
+        images: [
+          "/assets/images/projects/ghl-1.webp",
+          "/assets/images/projects/ghl-2.webp",
+          "/assets/images/projects/ghl-3.webp",
+          "/assets/images/projects/workflow-go-high-level.webp"
+        ]
       },
       {
-        company: "Danna Olarte",
-        title: "Programador Omnicanal",
-        description: "Distribución automatizada de activos a múltiples canales digitales sin intervención manual.",
-        image: "/assets/images/projects/service2-project1.webp",
+        company: "Joseph Clavijo",
+        title: "Reporting Comercial y Dashboards",
+        description: "Sincronización de datos CRM y Meta Ads en dashboards interactivos en tiempo real.",
+        image: "/assets/images/projects/Reporting y Sales Ops.webp",
         images: [
-          "/assets/images/projects/Comfy (1).webp",
-          "/assets/images/projects/Comfy (2).webp",
-          "/assets/images/projects/Comfy (3).webp",
-          "/assets/images/projects/Comfy (4).webp",
-          "/assets/images/projects/Comfy (5).webp",
-          "/assets/images/projects/Comfy (7).webp",
-          "/assets/images/projects/ComfyUI_temp_inrkh_00004_.webp",
-          "/assets/images/projects/ComfyUI-image_4_00001_.webp"
+          "/assets/images/projects/Dashboard 2 meta ads.webp",
+          "/assets/images/projects/Reporting y Sales Ops.webp"
+        ]
+      }
+    ],
+  },
+  {
+    number: "04",
+    title: "SALES OPS & REPORTING",
+    description:
+      "Sincronización de datos CRM y Meta Ads en dashboards interactivos en tiempo real para optimizar el rendimiento comercial y tomar decisiones basadas en datos.",
+    tags: ["Sales Ops", "Reporting", "Dashboards", "Meta Ads"],
+    icon: BarChart3,
+    accent: "blue",
+    banner: "/assets/images/projects/Reporting y Sales Ops.webp",
+    projects: [
+      "Dashboards interactivos en tiempo real",
+      "Sistemas de reporte automatizados",
+      "Análisis de conversión y embudos"
+    ],
+    projectsDetail: [
+      {
+        company: "Joseph Clavijo",
+        title: "Dashboards de Ventas y Pauta",
+        description: "Integración de métricas de adquisición y conversión en un panel interactivo centralizado.",
+        image: "/assets/images/projects/Dashboard 2 meta ads.webp",
+        images: [
+          "/assets/images/projects/Dashboard 2 meta ads.webp",
+          "/assets/images/projects/Reporting y Sales Ops.webp"
+        ]
+      },
+      {
+        company: "Joseph Clavijo",
+        title: "Reportería Comercial Automatizada",
+        description: "Envíos diarios y semanales de reportes de performance directamente a Slack o correo.",
+        image: "/assets/images/projects/Reporting y Sales Ops.webp",
+        images: [
+          "/assets/images/projects/Reporting y Sales Ops.webp",
+          "/assets/images/projects/Dashboard 2 meta ads.webp"
         ]
       }
     ],
