@@ -188,8 +188,8 @@ const COPY: Record<Lang, Copy> = {
       eyebrow: "CONTACT · LEAD CAPTURE",
       title: <>Tell us about your business. <em>We automate it.</em></>,
       text: "Send us a message and we will return a free 20-minute automation audit: what to optimize, what to integrate, and what to automate first.",
-      email: "joseph.clavijo.dev@gmail.com",
-      whatsapp: "WhatsApp: +57 313 612 9197",
+      email: "josephar2447@hotmail.com",
+      whatsapp: "WhatsApp: +57 318 462 5453",
       response: "Typical reply within ~24h, business days",
       fields: {
         name: "Name",
@@ -207,7 +207,7 @@ const COPY: Record<Lang, Copy> = {
       placeholders: {
         name: "Your name",
         company: "Your brand name",
-        whatsapp: "+57 313 612 9197",
+        whatsapp: "+57 318 462 5453",
         web: "pagurai.com · @brand",
         business: "E-commerce, Agency, SaaS, etc.",
         message: "Tell us what you need...",
@@ -289,8 +289,8 @@ const COPY: Record<Lang, Copy> = {
       eyebrow: "CONTACTO · DIAGNÓSTICO DE AUTOMATIZACIÓN",
       title: <>Cuéntanos sobre tu negocio. <em>Nosotros lo automatizamos.</em></>,
       text: "Envíanos un mensaje y te devolvemos un diagnóstico de automatización gratis de 20 min: qué optimizar, qué integrar y qué automatizar primero.",
-      email: "joseph.clavijo.dev@gmail.com",
-      whatsapp: "WhatsApp: +57 313 612 9197",
+      email: "josephar2447@hotmail.com",
+      whatsapp: "WhatsApp: +57 318 462 5453",
       response: "Respuesta habitual en ~24h, días hábiles",
       fields: {
         name: "Nombre",
@@ -308,7 +308,7 @@ const COPY: Record<Lang, Copy> = {
       placeholders: {
         name: "Tu nombre",
         company: "Nombre de tu marca",
-        whatsapp: "+57 313 612 9197",
+        whatsapp: "+57 318 462 5453",
         web: "pagurai.com · @marca",
         business: "E-commerce, Agencia, SaaS, etc.",
         message: "Cuéntanos qué necesitas...",
