@@ -384,7 +384,7 @@ main {
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.88fr);
   align-items: center;
   gap: 48px;
-  padding: 64px 0 36px;
+  padding: 125px 0 36px;
 }
 
 .hero-section,
@@ -1645,7 +1645,7 @@ main {
 
   .hero-section {
     min-height: auto;
-    padding-top: 54px;
+    padding-top: 100px;
     gap: 34px;
   }
 

@@ -149,7 +149,7 @@ const COPY: Record<Lang, Copy> = {
       title: "Scalable operating systems, not simple assets.",
       text: "Each block operates independently, but together they form your business's operating engine.",
       items: [
-        "n8n & Make Automation",
+        "n8n & Zapier Automation",
         "AI Agents & Chatbots",
         "CRM & Lead Automation",
         "Sales Ops & Reporting",
@@ -212,7 +212,7 @@ const COPY: Record<Lang, Copy> = {
         business: "E-commerce, Agency, SaaS, etc.",
         message: "Tell us what you need...",
       },
-      serviceOptions: ["Automation with n8n & Make", "AI Agents & Chatbots", "CRM & Lead Automation", "Sales Ops & Reporting"],
+      serviceOptions: ["Automation with n8n & Zapier", "AI Agents & Chatbots", "CRM & Lead Automation", "Sales Ops & Reporting"],
     },
     footer: "HERO → ABOUT ME → SERVICES → PORTFOLIO → CONTACT",
   },
@@ -250,7 +250,7 @@ const COPY: Record<Lang, Copy> = {
       title: "Sistemas operativos escalables, no simples piezas sueltas.",
       text: "Cada bloque opera de forma independiente, pero juntos forman el motor operativo de tu negocio.",
       items: [
-        "Automatización con n8n & Make",
+        "Automatización con n8n & Zapier",
         "Agentes de IA & Chatbots",
         "Automatización de CRM & Leads",
         "Sales Ops & Reporting",
@@ -276,8 +276,6 @@ const COPY: Record<Lang, Copy> = {
         ["Embudo de Ventas en GoHighLevel", "CRM", "small"],
         ["Reporting y Sales Ops", "Dashboard", "small"],
         ["Sincronización en Tiempo Real", "Automatización", "wide"],
-        ["Flujo de Nutrición de Clientes", "Automatización", "small"],
-        ["Dashboard de Pauta Digital", "Reporting", "small"],
       ],
     },
     cta: {
@@ -313,7 +311,7 @@ const COPY: Record<Lang, Copy> = {
         business: "E-commerce, Agencia, SaaS, etc.",
         message: "Cuéntanos qué necesitas...",
       },
-      serviceOptions: ["Automatización con n8n & Make", "Agentes de IA & Chatbots", "Automatización de CRM & Leads", "Sales Ops & Reporting"],
+      serviceOptions: ["Automatización con n8n & Zapier", "Agentes de IA & Chatbots", "Automatización de CRM & Leads", "Sales Ops & Reporting"],
     },
     footer: "HERO → SOBRE MÍ → SERVICIOS → PORTFOLIO → CONTACTO",
   },
@@ -332,8 +330,6 @@ const PORTFOLIO_IMAGES = [
   "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
   "/assets/images/projects/Reporting y Sales Ops.webp",
   "/assets/images/projects/Sincronización en Tiempo Real.webp",
-  "/assets/images/projects/workflow-go-high-level.webp",
-  "/assets/images/projects/Dashboard 2 meta ads.webp",
 ];
 
 
@@ -702,7 +698,7 @@ export default function PaguraiLanding() {
             <div className="glow-card about-portrait-card" onPointerMove={moveGlow}>
               <div className="about-portrait-wrapper">
                 <Image
-                  src="/assets/images/projects/joseph_profile.webp"
+                  src="/assets/images/projects/JosephImag.webp"
                   alt="Joseph Clavijo"
                   fill
                   className="about-portrait-img"
@@ -795,11 +791,11 @@ export default function PaguraiLanding() {
               <div className="tech-icon-item" title="Claude">
                 <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Google">
-                <img src="/assets/images/projects/Logo (Google).webp" alt="Google" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Vercel">
+                <img src="/assets/images/projects/Vercel.webp" alt="Vercel" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Meta">
-                <img src="/assets/images/projects/Logo (Meta).webp" alt="Meta" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Claude Code">
+                <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" className="tech-logo-img" />
               </div>
               <div className="tech-icon-item" title="GitHub">
                 <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" className="tech-logo-img" />
@@ -823,11 +819,11 @@ export default function PaguraiLanding() {
               <div className="tech-icon-item" title="Claude">
                 <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Google">
-                <img src="/assets/images/projects/Logo (Google).webp" alt="Google" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Vercel">
+                <img src="/assets/images/projects/Vercel.webp" alt="Vercel" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Meta">
-                <img src="/assets/images/projects/Logo (Meta).webp" alt="Meta" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Claude Code">
+                <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" className="tech-logo-img" />
               </div>
               <div className="tech-icon-item" title="GitHub">
                 <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" className="tech-logo-img" />
@@ -851,11 +847,11 @@ export default function PaguraiLanding() {
               <div className="tech-icon-item" title="Claude">
                 <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Google">
-                <img src="/assets/images/projects/Logo (Google).webp" alt="Google" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Vercel">
+                <img src="/assets/images/projects/Vercel.webp" alt="Vercel" className="tech-logo-img" />
               </div>
-              <div className="tech-icon-item" title="Meta">
-                <img src="/assets/images/projects/Logo (Meta).webp" alt="Meta" className="tech-logo-img" />
+              <div className="tech-icon-item" title="Claude Code">
+                <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" className="tech-logo-img" />
               </div>
               <div className="tech-icon-item" title="GitHub">
                 <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" className="tech-logo-img" />
@@ -1090,7 +1086,10 @@ export default function PaguraiLanding() {
                         <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style={{ height: "38px", width: "auto" }} />
                         <img src="/assets/images/projects/Hubspot(2).webp" alt="HubSpot" style={{ height: "38px", width: "auto" }} />
                         <img src="/assets/images/projects/Logo Claude.webp" alt="Claude" style={{ height: "38px", width: "auto" }} />
-                        <img src="/assets/images/projects/Logo Antigravity.webp" alt="Antigravity" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Vercel.webp" alt="Vercel" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Logo Github.webp" alt="GitHub" style={{ height: "38px", width: "auto" }} />
+                        <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "38px", width: "auto" }} />
                       </div>
                     </div>
 

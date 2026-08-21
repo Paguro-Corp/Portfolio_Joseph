@@ -32,10 +32,10 @@ export type Service = {
 export const EN_SERVICES: Service[] = [
   {
     number: "01",
-    title: "AUTOMATION WITH N8N & MAKE",
+    title: "AUTOMATION WITH N8N & ZAPIER",
     description:
       "Design and optimization of scalable workflows that connect your favorite tools to eliminate repetitive tasks and reduce operational costs.",
-    tags: ["n8n", "Make", "APIs", "Integrations"],
+    tags: ["n8n", "Zapier", "APIs", "Integrations"],
     icon: Workflow,
     accent: "blue",
     banner: "/assets/images/projects/Automatización-n8n_make(BANNER)Ingles.webp",
@@ -187,10 +187,10 @@ export const EN_SERVICES: Service[] = [
 export const ES_SERVICES: Service[] = [
   {
     number: "01",
-    title: "AUTOMATIZACIÓN CON N8N & MAKE",
+    title: "AUTOMATIZACIÓN CON N8N & ZAPIER",
     description:
       "Diseño y optimización de flujos de trabajo escalables que conectan tus herramientas favoritas para eliminar tareas repetitivas y reducir costos operativos.",
-    tags: ["n8n", "Make", "APIs", "Integraciones"],
+    tags: ["n8n", "Zapier", "APIs", "Integraciones"],
     icon: Workflow,
     accent: "blue",
     banner: "/assets/images/projects/Automatización-n8n_make(BANNER).webp",
