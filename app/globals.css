@@ -2164,6 +2164,11 @@ main {
   transition: all 0.3s ease;
 }
 
+.theme-light .project-card {
+  background: var(--bg-card) !important;
+  border-color: var(--line) !important;
+}
+
 .project-card:hover {
   border-color: var(--accent-color) !important;
   box-shadow: 0 0 30px rgba(0, 152, 255, 0.15);

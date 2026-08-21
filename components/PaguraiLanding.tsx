@@ -132,7 +132,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "[GROWTH_AUTOMATION_26]",
       title: <>Process Automation & <em>AI for Business</em>.</>,
       text: "I design and integrate digital architectures with n8n, CRM, and AI agents to eliminate repetitive tasks and scale your operations.",
-      work: "View work",
+      work: "Contact me",
       system: "View system",
       visualAria: "Joseph Clavijo visual system",
       video: "AUTOMATION ENGINE",
@@ -182,7 +182,7 @@ const COPY: Record<Lang, Copy> = {
     cta: {
       title: "Automate your business and create an operating system that works 24/7.",
       text: "Free automation audit · 20 minutes · no commitment",
-      button: "Get started",
+      button: "Contact me",
     },
     contact: {
       eyebrow: "CONTACT · LEAD CAPTURE",
@@ -233,7 +233,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "[GROWTH_AUTOMATION_26]",
       title: <>Automatización de Procesos e <em>IA para Negocios</em>.</>,
       text: "Diseño e integro arquitecturas digitales con n8n, CRM y agentes de IA para eliminar tareas repetitivas y escalar tus operaciones.",
-      work: "Ver trabajo",
+      work: "Contáctame",
       system: "Ver sistema",
       visualAria: "Sistema de automatización de Joseph Clavijo",
       video: "IA · MOTOR DE AUTOMATIZACIÓN",
@@ -281,7 +281,7 @@ const COPY: Record<Lang, Copy> = {
     cta: {
       title: "Automatiza tu negocio y crea un sistema operativo que trabaje 24/7.",
       text: "Diagnóstico de automatización gratis · 20 minutos · sin compromiso",
-      button: "Empezar",
+      button: "Contáctame",
     },
     contact: {
       eyebrow: "CONTACTO · DIAGNÓSTICO DE AUTOMATIZACIÓN",
@@ -631,7 +631,7 @@ export default function PaguraiLanding() {
             <h1>{copy.hero.title}</h1>
             <p>{copy.hero.text}</p>
             <div className="hero-actions">
-              <Button href="#portfolio">
+              <Button href="#contacto">
                 {copy.hero.work} <ArrowRight size={18} />
               </Button>
               <Button href="#servicios" variant="ghost">

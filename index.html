@@ -57,6 +57,11 @@
       background: rgba(18, 18, 26, 0.72) !important;
     }
 
+    .theme-light .project-card {
+      background: var(--bg-card) !important;
+      border-color: var(--line) !important;
+    }
+
     @media (max-width: 640px) {
       .project-card {
         padding: 20px !important;
@@ -588,11 +593,11 @@
           <p class="lang-en">I design and integrate digital architectures with n8n, CRM, and AI agents to eliminate repetitive tasks and scale your operations.</p>
           
           <div class="hero-actions">
-            <a class="site-btn primary" href="#portfolio" onpointermove="moveGlow(event)">
+            <a class="site-btn primary" href="#contacto" onpointermove="moveGlow(event)">
               <span class="btn-glow" aria-hidden="true"></span>
               <span class="btn-content">
-                <span class="lang-es">Ver trabajo</span>
-                <span class="lang-en">View work</span>
+                <span class="lang-es">Contáctame</span>
+                <span class="lang-en">Contact me</span>
                 <i data-lucide="arrow-right" style="width: 18px; height: 18px; margin-left: 4px;"></i>
               </span>
             </a>
@@ -1018,8 +1023,8 @@
         <a class="site-btn primary" href="#contacto" onpointermove="moveGlow(event)">
           <span class="btn-glow" aria-hidden="true"></span>
           <span class="btn-content">
-            <span class="lang-es">Empezar</span>
-            <span class="lang-en">Get started</span>
+            <span class="lang-es">Contáctame</span>
+            <span class="lang-en">Contact me</span>
             <i data-lucide="arrow-right" style="width: 18px; height: 18px; margin-left: 4px;"></i>
           </span>
         </a>
@@ -1882,7 +1887,7 @@
             
             <!-- Text Description (Above Image) -->
             <div>
-              <h3 style="font-size: 21px; color: #fff; font-family: var(--font-display); font-style: italic; margin: 0; text-transform: uppercase; line-height: 1.1;">
+              <h3 style="font-size: 21px; color: var(--ink); font-family: var(--font-display); font-style: italic; margin: 0; text-transform: uppercase; line-height: 1.1;">
                 ${project.title}
               </h3>
               <p style="margin-top: 8px; color: var(--ink-soft); font-size: 13.5px; line-height: 1.5; font-family: var(--font-body);">

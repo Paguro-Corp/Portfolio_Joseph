@@ -265,7 +265,7 @@ export default function ServiceProjectsPage() {
                     <div>
                       <h3 style={{
                         fontSize: "21px",
-                        color: "#fff",
+                        color: "var(--ink)",
                         fontFamily: "var(--font-display)",
                         fontStyle: "italic",
                         margin: 0,
