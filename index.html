@@ -49,11 +49,11 @@
 
     /* Project Cards clean layout (Text above image) */
     .project-card {
-      padding: 28px !important;
+      padding: 16px 20px !important;
       display: flex !important;
       flex-direction: column !important;
       justify-content: space-between !important;
-      min-height: 450px !important;
+      min-height: auto !important;
       background: rgba(18, 18, 26, 0.72) !important;
     }
 
@@ -62,9 +62,21 @@
       border-color: var(--line) !important;
     }
 
+    .projects-grid.single-project,
+    .projects-grid:has(> :only-child) {
+      grid-template-columns: 1fr !important;
+      max-width: 480px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
     @media (max-width: 640px) {
+      .projects-grid.single-project,
+      .projects-grid:has(> :only-child) {
+        max-width: 100% !important;
+      }
       .project-card {
-        padding: 20px !important;
+        padding: 14px 16px !important;
         min-height: auto !important;
       }
     }
@@ -72,12 +84,14 @@
     .project-card-image-wrapper {
       position: relative;
       width: 100%;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 16 / 9 !important;
+      height: auto !important;
+      max-height: none !important;
       border-radius: 12px;
       overflow: hidden;
       border: 1px solid var(--line);
-      margin-top: 16px;
-      background: rgba(0, 0, 0, 0.2);
+      margin-top: 8px;
+      background: rgba(0, 0, 0, 0.25);
     }
     
     .project-card-image-wrapper img {
@@ -85,14 +99,87 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover !important;
+      object-position: center;
       transition: transform 0.6s var(--ease-out), filter 0.4s ease;
-      filter: saturate(0.85) contrast(0.98) brightness(0.85);
+      filter: saturate(0.95) contrast(1.02);
     }
     
     .project-card:hover .project-card-image-wrapper img {
-      transform: scale(1.05);
-      filter: saturate(1) contrast(1.02) brightness(1);
+      transform: scale(1.04);
+      filter: saturate(1.05) contrast(1.05);
+    }
+
+    .project-card h3 {
+      font-size: 14.5px !important;
+      color: var(--ink) !important;
+      font-family: var(--font-display) !important;
+      font-style: italic !important;
+      margin: 0 !important;
+      text-transform: uppercase !important;
+      line-height: 1.25 !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      min-height: 2.5em !important;
+    }
+
+    .project-card p {
+      margin-top: 4px !important;
+      color: var(--ink-soft) !important;
+      font-size: 11.5px !important;
+      line-height: 1.35 !important;
+      font-family: var(--font-body) !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      min-height: 2.7em !important;
+    }
+
+    /* Compact sizing for projects detail popup so all elements fit cleanly */
+    #projects-modal-container {
+      max-width: 680px !important;
+    }
+    #projects-modal-container .modal-content {
+      padding: 16px 22px !important;
+      gap: 8px !important;
+      max-height: 90vh !important;
+      overflow-y: auto !important;
+    }
+    #projects-modal-container .modal-header {
+      margin-bottom: 0 !important;
+    }
+    #projects-modal-container .section-head {
+      margin-bottom: 2px !important;
+      gap: 4px !important;
+    }
+    #projects-modal-container .modal-title {
+      font-size: 20px !important;
+      line-height: 1.1 !important;
+      margin-top: 2px !important;
+    }
+    #projects-modal-container .modal-desc {
+      font-size: 12px !important;
+      line-height: 1.35 !important;
+      margin-top: 2px !important;
+    }
+    #projects-modal-container .projects-grid.single-project {
+      max-width: 480px !important;
+      margin-top: 6px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    #projects-modal-container .project-card {
+      padding: 14px 18px !important;
+      gap: 8px !important;
+    }
+    #projects-modal-container .project-card-image-wrapper {
+      aspect-ratio: 16 / 9 !important;
+      height: auto !important;
+      max-height: none !important;
+      margin-top: 8px !important;
     }
 
     /* Language Visibility classes */
@@ -621,7 +708,7 @@
           </div>
           <div class="visual-stage">
             <div class="reel-card main-reel" style="background: rgba(18, 18, 26, 0.6); overflow: hidden;">
-              <img src="./public/assets/images/projects/automatizacion-joseph.webp" alt="Automation Workflow" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+              <img src="./public/assets/images/projects/HeroSection.webp" alt="Automation Workflow" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
               <span class="lang-es" style="background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px;">Motor de Automatización</span>
               <span class="lang-en" style="background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px;">Automation Engine</span>
             </div>
@@ -1183,7 +1270,7 @@
 
     <!-- Projects Detail Modal (2 boxes) -->
     <div id="projects-modal-overlay" class="modal-overlay" onclick="closeProjectsModalOnBackdrop(event)" style="display: none; z-index: 101;">
-      <div id="projects-modal-container" class="modal-container" style="max-width: 960px;" onpointermove="moveGlow(event)">
+      <div id="projects-modal-container" class="modal-container" style="max-width: 780px;" onpointermove="moveGlow(event)">
         <button type="button" class="modal-close-btn" onclick="closeProjectsModal()" aria-label="Close">
           <i data-lucide="x" style="width: 20px; height: 20px;"></i>
         </button>
@@ -1201,37 +1288,28 @@
             <span class="modal-number" id="projects-modal-number-text">01</span>
           </div>
 
-          <div class="section-head" style="grid-template-columns: 1fr; gap: 8px; margin-bottom: 12px;">
+          <div class="section-head" style="grid-template-columns: 1fr; gap: 6px; margin-bottom: 8px;">
             <div>
               <span class="eyebrow blue">
                 <span class="lang-es">Detalles del servicio</span>
                 <span class="lang-en">Service details</span>
               </span>
-              <h2 class="modal-title" id="projects-modal-title-text" style="font-size: 32px; line-height: 1.1;">Creación de contenido con IA</h2>
+              <h2 class="modal-title" id="projects-modal-title-text" style="font-size: 26px; line-height: 1.1; margin-top: 4px;">Creación de contenido con IA</h2>
             </div>
-            <p class="modal-desc" id="projects-modal-desc-text" style="margin-top: 8px;"></p>
+            <p class="modal-desc" id="projects-modal-desc-text" style="margin-top: 4px; font-size: 13.5px;"></p>
             
             <!-- Tools used container -->
-            <div id="projects-modal-tools-container" style="display: none; margin-top: 16px;">
-              <span class="eyebrow" style="font-size: 11px; color: var(--ink-muted); letter-spacing: 0.1em; display: block; margin-bottom: 8px;">
+            <div id="projects-modal-tools-container" style="display: none; margin-top: 10px;">
+              <span class="eyebrow" style="font-size: 11px; color: var(--ink-muted); letter-spacing: 0.1em; display: block; margin-bottom: 6px;">
                 <span class="lang-es">HERRAMIENTAS USADAS</span>
                 <span class="lang-en">TOOLS USED</span>
               </span>
-              <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
-                <img src="./public/assets/images/projects/N8N.webp" alt="n8n" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Hubspot(2).webp" alt="HubSpot" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Logo Claude.webp" alt="Claude" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Vercel.webp" alt="Vercel" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/claude-code.webp" alt="Claude Code" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Logo Github.webp" alt="GitHub" style="height: 38px; width: auto;">
-                <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 38px; width: auto;">
+              <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
               </div>
             </div>
           </div>
 
-          <div>
+          <div style="margin-top: 6px; margin-bottom: 4px;">
             <span class="eyebrow">
               <span class="lang-es">Casos de éxito</span>
               <span class="lang-en">Success cases</span>
@@ -1293,6 +1371,40 @@
       </div>
     </div>
 
+    <!-- Interactive HTML Project Modal Overlay -->
+    <div id="project-html-modal-overlay" class="modal-overlay" onclick="closeProjectModalIframeOnBackdrop(event)" style="display: none; z-index: 102; background: rgba(2, 3, 10, 0.94);">
+      <button type="button" class="modal-close-btn" style="top: 24px; right: 24px; width: 44px; height: 44px; z-index: 10;" onclick="closeProjectModalIframe()">
+        <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+      </button>
+
+      <div onclick="event.stopPropagation()" style="width: min(1280px, calc(100vw - 32px)); height: min(880px, calc(100vh - 48px)); position: relative; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9); margin: auto; display: flex; flex-direction: column; background: #080912;">
+        <!-- Top bar with title and actions -->
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: rgba(10, 14, 25, 0.95); border-bottom: 1px solid rgba(255, 255, 255, 0.08); gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 10px; overflow: hidden;">
+            <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #00d26a; box-shadow: 0 0 8px #00d26a; flex-shrink: 0;"></span>
+            <span id="project-html-title" style="color: #fff; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: 0.03em;">
+              Proyecto Interactivo
+            </span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0; padding-right: 36px;">
+            <a id="project-html-external-link" href="#" target="_blank" rel="noopener noreferrer" class="site-btn secondary" style="padding: 6px 14px; font-size: 11px; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;" onpointermove="moveGlow(event)">
+              <span class="btn-glow" aria-hidden="true"></span>
+              <span class="btn-content" style="gap: 6px;">
+                <i data-lucide="external-link" style="width: 13px; height: 13px;"></i>
+                <span class="lang-es">Pantalla completa</span>
+                <span class="lang-en">Fullscreen</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Iframe container -->
+        <div style="flex: 1; width: 100%; position: relative; background: #05070f;">
+          <iframe id="project-html-iframe" src="" style="width: 100%; height: 100%; border: none; display: block;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- JavaScript logic -->
@@ -1320,25 +1432,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "Automatización de Operaciones",
-              description: "Creación de flujos robustos que conectan CRMs, bases de datos y sistemas de mensajería.",
-              image: "./public/assets/images/projects/Automatización de Operaciones.webp",
-              images: [
-                "./public/assets/images/projects/n8n-1.webp",
-                "./public/assets/images/projects/n8n-2.webp",
-                "./public/assets/images/projects/n8n-3.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Sincronización en Tiempo Real",
-              description: "Conexión bidireccional entre Shopify, Stripe y CRMs para actualizar datos al instante.",
-              image: "./public/assets/images/projects/Sincronización en Tiempo Real.webp",
-              images: [
-                "./public/assets/images/projects/n8n-1.webp",
-                "./public/assets/images/projects/n8n-2.webp",
-                "./public/assets/images/projects/n8n-3.webp"
-              ]
+              title: "Sistema de Producción de Contenido con IA y Automatización de Redes",
+              description: "Flujo automatizado con IA para generar creativos, video y publicación programada en redes sociales.",
+              image: "./public/assets/images/projects/Shampoo Prai.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/ecommerce-ai-content-production-social-media-automation-system.html"
             }
           ]
         },
@@ -1353,23 +1451,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "Chatbots de Ventas en WhatsApp",
-              description: "Asistente automatizado en WhatsApp capaz de calificar prospectos y agendar citas en el CRM.",
-              image: "./public/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-              images: [
-                "./public/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-                "./public/assets/images/projects/AgentesdeIA&Chatbots.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Agente Inteligente de Soporte",
-              description: "Agente conversacional entrenado con la base de conocimientos de la empresa para resolver dudas comunes.",
-              image: "./public/assets/images/projects/AgentesdeIA&Chatbots.webp",
-              images: [
-                "./public/assets/images/projects/AgentesdeIA&Chatbots.webp",
-                "./public/assets/images/projects/Chatbots(Portada).webp"
-              ]
+              title: "Pagureo - Sistema de Automatización de Ventas Omnicanal y CRM",
+              description: "Atención comercial automatizada con agentes IA en WhatsApp, calificación de prospectos y pipeline CRM.",
+              image: "./public/assets/images/projects/AI Agent.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/pagureo-omnichannel-sales-crm-automation-system.html"
             }
           ]
         },
@@ -1384,25 +1470,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "Embudo de Ventas en GoHighLevel",
-              description: "Configuración integral de GHL para capturar leads, enviar secuencias de correos y automatizar el embudo comercial.",
-              image: "./public/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
-              images: [
-                "./public/assets/images/projects/ghl-1.webp",
-                "./public/assets/images/projects/ghl-2.webp",
-                "./public/assets/images/projects/ghl-3.webp",
-                "./public/assets/images/projects/workflow-go-high-level.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Reporting Comercial y Dashboards",
-              description: "Sincronización de datos CRM y Meta Ads en dashboards interactivos en tiempo real.",
-              image: "./public/assets/images/projects/Reporting y Sales Ops.webp",
-              images: [
-                "./public/assets/images/projects/Dashboard 2 meta ads.webp",
-                "./public/assets/images/projects/Reporting y Sales Ops.webp"
-              ]
+              title: "Sistema de Retención Ecommerce y Ciclo de Vida del Cliente",
+              description: "Estrategia Customer 360 en GoHighLevel para fidelizar compradores primerizos en clientes recurrentes.",
+              image: "./public/assets/images/projects/ghl-logo.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/ecommerce-retention-customer-lifecycle-system.html"
             }
           ]
         },
@@ -1417,23 +1489,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "Dashboards de Ventas y Pauta",
-              description: "Integración de métricas de adquisición y conversión en un panel interactivo centralizado.",
-              image: "./public/assets/images/projects/Dashboard 2 meta ads.webp",
-              images: [
-                "./public/assets/images/projects/Dashboard 2 meta ads.webp",
-                "./public/assets/images/projects/Reporting y Sales Ops.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Reportería Comercial Automatizada",
-              description: "Envíos diarios y semanales de reportes de performance directamente a Slack o correo.",
-              image: "./public/assets/images/projects/Reporting y Sales Ops.webp",
-              images: [
-                "./public/assets/images/projects/Reporting y Sales Ops.webp",
-                "./public/assets/images/projects/Dashboard 2 meta ads.webp"
-              ]
+              title: "Sistema Operativo de Ingresos Ecommerce y Reportería Comercial",
+              description: "Panel analítico que unifica adquisición de tráfico, atribución de pauta y métricas clave de negocio.",
+              image: "./public/assets/images/projects/n8n-portada.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/ecommerce-revenue-operating-system.html"
             }
           ]
         }
@@ -1443,32 +1503,18 @@
           number: "01",
           title: "Automation with n8n & Zapier",
           description: "Design and optimization of scalable workflows that connect your favorite tools to eliminate repetitive tasks and reduce operational costs.",
-          tags: ["n8n", "Zapier", "APIs", "Integrations"],
+          tags: ["n8n", "Zapier", "APIs", "Integraciones"],
           accent: "blue",
           banner: "./public/assets/images/projects/Automatización-n8n_make(BANNER)Ingles.webp",
           projects: ["Tool Integration", "Report Automation", "Custom Workflows"],
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "Operations Automation",
-              description: "Creation of robust workflows connecting CRMs, databases, and messaging systems.",
-              image: "./public/assets/images/projects/Automatización de Operaciones.webp",
-              images: [
-                "./public/assets/images/projects/n8n-1.webp",
-                "./public/assets/images/projects/n8n-2.webp",
-                "./public/assets/images/projects/n8n-3.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Real-time Synchronization",
-              description: "Bi-directional connection between Shopify, Stripe, and CRMs to update data instantly.",
-              image: "./public/assets/images/projects/Sincronización en Tiempo Real.webp",
-              images: [
-                "./public/assets/images/projects/n8n-1.webp",
-                "./public/assets/images/projects/n8n-2.webp",
-                "./public/assets/images/projects/n8n-3.webp"
-              ]
+              title: "Ecommerce AI Content Production & Social Media Automation System",
+              description: "Automated AI workflow for visual asset creation, dynamic video and scheduled multi-platform publishing.",
+              image: "./public/assets/images/projects/Shampoo Prai.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/ecommerce-ai-content-production-social-media-automation-system.html"
             }
           ]
         },
@@ -1483,23 +1529,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "WhatsApp Sales Chatbots",
-              description: "Automated WhatsApp assistant capable of qualifying leads and booking appointments in the CRM.",
-              image: "./public/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-              images: [
-                "./public/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-                "./public/assets/images/projects/AgentesdeIA&Chatbots.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Intelligent Support Agent",
-              description: "Conversational agent trained on the company's knowledge base to resolve common queries.",
-              image: "./public/assets/images/projects/AgentesdeIA&Chatbots.webp",
-              images: [
-                "./public/assets/images/projects/AgentesdeIA&Chatbots.webp",
-                "./public/assets/images/projects/Chatbots(Portada).webp"
-              ]
+              title: "Pagureo - Omnichannel Sales & CRM Automation System",
+              description: "Automated sales messaging with WhatsApp AI bots, smart lead scoring and centralized pipeline CRM.",
+              image: "./public/assets/images/projects/AI Agent.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/pagureo-omnichannel-sales-crm-automation-system.html"
             }
           ]
         },
@@ -1514,25 +1548,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "GoHighLevel Sales Funnel",
-              description: "Comprehensive GHL setup to capture leads, send email sequences, and automate the sales funnel.",
-              image: "./public/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
-              images: [
-                "./public/assets/images/projects/ghl-1.webp",
-                "./public/assets/images/projects/ghl-2.webp",
-                "./public/assets/images/projects/ghl-3.webp",
-                "./public/assets/images/projects/workflow-go-high-level.webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Sales Reporting & Dashboards",
-              description: "Synchronization of CRM and Meta Ads data into interactive real-time dashboards.",
-              image: "./public/assets/images/projects/Reporting y Sales Ops.webp",
-              images: [
-                "./public/assets/images/projects/Dashboard 2 meta ads.webp",
-                "./public/assets/images/projects/Reporting y Sales Ops.webp"
-              ]
+              title: "Ecommerce Retention & Customer Lifecycle System",
+              description: "Customer 360 retention in GoHighLevel turning one-time buyers into loyal repeat brand customers.",
+              image: "./public/assets/images/projects/ghl-logo.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/ecommerce-retention-customer-lifecycle-system.html"
             }
           ]
         },
@@ -1547,23 +1567,11 @@
           projectsDetail: [
             {
               company: "Joseph Clavijo",
-              title: "Sales & Ads Dashboards",
-              description: "Integration of acquisition and conversion metrics into a centralized interactive panel.",
-              image: "./public/assets/images/projects/Dashboard 2 meta ads.webp",
-              images: [
-                "./public/assets/images/projects/Dashboard 2 meta ads.webp",
-                "./public/assets/images/projects/Reporting y Sales Ops(Ingles).webp"
-              ]
-            },
-            {
-              company: "Joseph Clavijo",
-              title: "Automated Sales Reporting",
-              description: "Daily and weekly performance reports sent directly to Slack or email.",
-              image: "./public/assets/images/projects/Reporting y Sales Ops(Ingles).webp",
-              images: [
-                "./public/assets/images/projects/Reporting y Sales Ops(Ingles).webp",
-                "./public/assets/images/projects/Dashboard 2 meta ads.webp"
-              ]
+              title: "Ecommerce Revenue Operating System & Commercial Reporting",
+              description: "Central analytics hub unifying ad attribution, paid traffic performance and financial metrics.",
+              image: "./public/assets/images/projects/n8n-portada.webp",
+              aspectRatio: "16 / 9",
+              htmlUrl: "./public/assets/images/resultados/ecommerce-revenue-operating-system.html"
             }
           ]
         }
@@ -1797,6 +1805,9 @@
       document.getElementById('projects-modal-title-text').textContent = service.title;
       document.getElementById('projects-modal-desc-text').textContent = service.description;
 
+      const modalContent = document.querySelector('#projects-modal-container .modal-content');
+      if (modalContent) modalContent.scrollTop = 0;
+
       const toolsContainer = document.getElementById('projects-modal-tools-container');
       if (toolsContainer) {
         toolsContainer.style.display = 'block';
@@ -1805,32 +1816,31 @@
         let toolLogos = '';
         if (index === 0) {
           toolLogos = `
-            <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/claude-code.webp" alt="Claude Code" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/N8N.webp" alt="n8n" style="height: 38px; width: auto;">
+            <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/claude-code.webp" alt="Claude Code" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/N8N.webp" alt="n8n" style="height: 30px; width: auto;">
           `;
         } else if (index === 1) {
           toolLogos = `
-            <img src="./public/assets/images/projects/claude-code.webp" alt="Claude Code" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Texto (1).webp" alt="Tool" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/ghl-logo.webp" alt="GoHighLevel" style="height: 38px; width: auto;">
+            <img src="./public/assets/images/projects/claude-code.webp" alt="Claude Code" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Texto (1).webp" alt="OpenAI" style="height: 30px; width: auto; border-radius: 4px;">
+            <img src="./public/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style="height: 30px; width: auto;">
           `;
         } else if (index === 2) {
           toolLogos = `
-            <img src="./public/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/N8N.webp" alt="n8n" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 38px; width: auto;">
+            <img src="./public/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/N8N.webp" alt="n8n" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 30px; width: auto;">
           `;
         } else if (index === 3) {
           toolLogos = `
-            <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style="height: 38px; width: auto;">
-            <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 38px; width: auto;">
+            <img src="./public/assets/images/projects/Zapier.webp" alt="Zapier" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style="height: 30px; width: auto;">
+            <img src="./public/assets/images/projects/Codex.webp" alt="Codex" style="height: 30px; width: auto;">
           `;
         }
         toolsWrapper.innerHTML = toolLogos;
@@ -1841,9 +1851,14 @@
       const container = document.getElementById('projects-modal-container');
       container.className = `modal-container ${service.accent}`;
 
-      // Render the 2 project boxes dynamically (Clean text-above-image structure)
+      // Render project boxes dynamically (Clean text-above-image structure)
       const cardsContainer = document.getElementById('projects-cards-container');
       cardsContainer.innerHTML = '';
+      if (service.projectsDetail && service.projectsDetail.length === 1) {
+        cardsContainer.classList.add('single-project');
+      } else {
+        cardsContainer.classList.remove('single-project');
+      }
 
       const viewDemoText = currentLang === 'es' ? "Ver resultados" : "View results";
 
@@ -1852,7 +1867,11 @@
         card.className = `glow-card mini block-card project-card ${service.accent === 'pink' ? 'connected-card' : ''}`;
         
         let btnAction = '';
-        if (project.video) {
+        if (project.htmlUrl) {
+          card.style.cursor = 'pointer';
+          card.onclick = () => openProjectModalIframe(project.htmlUrl, project.title);
+          btnAction = `openProjectModalIframe('${project.htmlUrl}', '${project.title.replace(/'/g, "\\'")}')`;
+        } else if (project.video) {
           card.style.cursor = 'pointer';
           card.onclick = () => openVideoLightbox(project.video);
           btnAction = `openVideoLightbox('${project.video}')`;
@@ -1876,37 +1895,37 @@
 
         // Clean layout content: Company/Icon header -> Text Title/Description -> Image Wrapper -> Button
         card.innerHTML = `
-          <div style="display: flex; flex-direction: column; gap: 14px; height: 100%;">
+          <div style="display: flex; flex-direction: column; gap: 8px; height: 100%;">
             <!-- Header -->
             <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-              <span style="color: ${service.accent === 'pink' ? 'var(--pink-neon)' : 'var(--accent-color)'}; font-weight: bold; font-family: var(--font-body); letter-spacing: 0.1em; font-size: 13px;">
+              <span style="color: ${service.accent === 'pink' ? 'var(--pink-neon)' : 'var(--accent-color)'}; font-weight: bold; font-family: var(--font-body); letter-spacing: 0.1em; font-size: 11px;">
                 ${project.company.toUpperCase()}
               </span>
-              <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: ${service.accent === 'pink' ? 'var(--pink-neon)' : 'var(--accent-color)'};"></i>
+              <i data-lucide="check-circle-2" style="width: 15px; height: 15px; color: ${service.accent === 'pink' ? 'var(--pink-neon)' : 'var(--accent-color)'};"></i>
             </div>
             
             <!-- Text Description (Above Image) -->
             <div>
-              <h3 style="font-size: 21px; color: var(--ink); font-family: var(--font-display); font-style: italic; margin: 0; text-transform: uppercase; line-height: 1.1;">
+              <h3>
                 ${project.title}
               </h3>
-              <p style="margin-top: 8px; color: var(--ink-soft); font-size: 13.5px; line-height: 1.5; font-family: var(--font-body);">
+              <p>
                 ${project.description}
               </p>
             </div>
 
-            <!-- Image wrapper -->
-            <div class="project-card-image-wrapper" style="aspect-ratio: ${imageRatio};">
-              <img src="${project.image}" alt="" style="object-fit: ${fitStyle};">
+            <!-- Image wrapper (4:5 ratio) -->
+            <div class="project-card-image-wrapper">
+              <img src="${project.image}" alt="" style="object-fit: cover;">
               ${iconOverlay}
             </div>
 
             <!-- Button at bottom (Performs same action as clicking card) -->
-            <div style="margin-top: auto; padding-top: 8px;">
+            <div style="margin-top: auto; padding-top: 2px;">
               <button
                 type="button"
                 class="site-btn secondary"
-                style="padding: 8px 18px; font-size: 11px; min-height: 36px; width: 100%; display: flex; justify-content: center;"
+                style="padding: 6px 14px; font-size: 11px; min-height: 30px; width: 100%; display: flex; justify-content: center;"
                 onpointermove="moveGlow(event)"
                 onclick="event.stopPropagation(); ${btnAction};"
               >
@@ -1938,6 +1957,43 @@
     function backToServiceModal() {
       closeProjectsModal();
       openServiceModal(activeModalIndex);
+    }
+
+    // 3rd Level: Interactive HTML project iframe modal
+    function openProjectModalIframe(url, title) {
+      const iframe = document.getElementById('project-html-iframe');
+      const titleEl = document.getElementById('project-html-title');
+      const externalLink = document.getElementById('project-html-external-link');
+      
+      const langParam = currentLang;
+      const fullUrl = url.includes('?') ? `${url}&lang=${langParam}&theme=dark` : `${url}?lang=${langParam}&theme=dark`;
+      
+      if (iframe) iframe.src = fullUrl;
+      if (titleEl) titleEl.textContent = title || "Caso de Éxito Interactivo";
+      if (externalLink) externalLink.href = fullUrl;
+      
+      document.getElementById('project-html-modal-overlay').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeProjectModalIframe() {
+      const iframe = document.getElementById('project-html-iframe');
+      if (iframe) iframe.src = '';
+      document.getElementById('project-html-modal-overlay').style.display = 'none';
+      
+      // Maintain body overflow locked if parent modal is still open
+      if (document.getElementById('projects-modal-overlay').style.display === 'flex') {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeProjectModalIframeOnBackdrop(e) {
+      if (e.target.id === 'project-html-modal-overlay') {
+        closeProjectModalIframe();
+      }
     }
 
     // 3rd Level: Fullscreen video lightbox
@@ -2181,7 +2237,9 @@
     // Keydown handlers (ESC to close modals, Arrow keys for gallery)
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        if (document.getElementById('image-lightbox-overlay').style.display === 'flex') {
+        if (document.getElementById('project-html-modal-overlay') && document.getElementById('project-html-modal-overlay').style.display === 'flex') {
+          closeProjectModalIframe();
+        } else if (document.getElementById('image-lightbox-overlay').style.display === 'flex') {
           closeImageLightbox();
         } else if (document.getElementById('video-lightbox-overlay').style.display === 'flex') {
           closeVideoLightbox();

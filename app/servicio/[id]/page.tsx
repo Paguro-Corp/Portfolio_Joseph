@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { ArrowLeft, CheckCircle2, Play, X, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Play, X, ChevronLeft, ChevronRight, Sparkles, ExternalLink } from "lucide-react";
 import { ES_SERVICES, EN_SERVICES } from "@/components/servicesData";
 import { DotMatrix, moveGlow } from "@/components/PaguraiLanding";
 
@@ -17,6 +17,7 @@ export default function ServiceProjectsPage() {
   const [activeLightboxVideo, setActiveLightboxVideo] = useState<string | null>(null);
   const [activeLightboxImages, setActiveLightboxImages] = useState<string[] | null>(null);
   const [activeLightboxImageIndex, setActiveLightboxImageIndex] = useState<number>(0);
+  const [activeLightboxHtml, setActiveLightboxHtml] = useState<{ url: string; title: string } | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -29,7 +30,7 @@ export default function ServiceProjectsPage() {
 
   // Control dynamic body overflow locking when lightbox is active
   useEffect(() => {
-    if (activeLightboxVideo !== null || activeLightboxImages !== null) {
+    if (activeLightboxVideo !== null || activeLightboxImages !== null || activeLightboxHtml !== null) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -37,7 +38,7 @@ export default function ServiceProjectsPage() {
     return () => {
       document.body.style.overflow = "";
     };
-  }, [activeLightboxVideo, activeLightboxImages]);
+  }, [activeLightboxVideo, activeLightboxImages, activeLightboxHtml]);
 
   // Support ESC key and Arrow keys close/navigate action
   useEffect(() => {
@@ -45,6 +46,7 @@ export default function ServiceProjectsPage() {
       if (e.key === "Escape") {
         setActiveLightboxVideo(null);
         setActiveLightboxImages(null);
+        setActiveLightboxHtml(null);
       } else if (e.key === "ArrowLeft" && activeLightboxImages) {
         setActiveLightboxImageIndex((prev) => (prev > 0 ? prev - 1 : activeLightboxImages.length - 1));
       } else if (e.key === "ArrowRight" && activeLightboxImages) {
@@ -121,6 +123,8 @@ export default function ServiceProjectsPage() {
       viewProject: "Ver resultados",
       metaTitle: "Casos de estudio y proyectos construidos.",
       closeVideo: "Cerrar video",
+      closeProject: "Cerrar caso de éxito",
+      fullscreen: "Pantalla completa",
     },
     en: {
       back: "Back to home",
@@ -130,6 +134,8 @@ export default function ServiceProjectsPage() {
       viewProject: "View results",
       metaTitle: "Case studies and built projects.",
       closeVideo: "Close video",
+      closeProject: "Close case study",
+      fullscreen: "Fullscreen",
     },
   }[lang];
 
@@ -185,35 +191,34 @@ export default function ServiceProjectsPage() {
                 <div style={{ display: "flex", gap: "16px", alignItems: "center", marginTop: "12px", flexWrap: "wrap" }}>
                   {serviceIndex === 0 && (
                     <>
-                      <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/N8N.webp" alt="n8n" style={{ height: "38px", width: "auto" }} />
+                      <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/N8N.webp" alt="n8n" style={{ height: "30px", width: "auto" }} />
                     </>
                   )}
                   {serviceIndex === 1 && (
                     <>
-                      <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Texto (1).webp" alt="Tool" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/ghl-logo.webp" alt="GoHighLevel" style={{ height: "38px", width: "auto" }} />
+                      <img src="/assets/images/projects/claude-code.webp" alt="Claude Code" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Texto (1).webp" alt="OpenAI" style={{ height: "30px", width: "auto", borderRadius: "4px" }} />
+                      <img src="/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style={{ height: "30px", width: "auto" }} />
                     </>
                   )}
                   {serviceIndex === 2 && (
                     <>
-                      <img src="/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/N8N.webp" alt="n8n" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "38px", width: "auto" }} />
+                      <img src="/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/N8N.webp" alt="n8n" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "30px", width: "auto" }} />
                     </>
                   )}
                   {serviceIndex === 3 && (
                     <>
-                      <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style={{ height: "38px", width: "auto" }} />
-                      <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "38px", width: "auto" }} />
+                      <img src="/assets/images/projects/Zapier.webp" alt="Zapier" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Logo GoHighLevel.webp" alt="GoHighLevel" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Hubspot(2).webp" alt="Hubspot" style={{ height: "30px", width: "auto" }} />
+                      <img src="/assets/images/projects/Codex.webp" alt="Codex" style={{ height: "30px", width: "auto" }} />
                     </>
                   )}
                 </div>
@@ -221,15 +226,17 @@ export default function ServiceProjectsPage() {
             )}
           </div>
 
-          <div style={{ marginBottom: "28px" }}>
+          <div style={{ marginBottom: "16px" }}>
             <span className="eyebrow">{service.cardTitle || labels.projectEyebrow}</span>
           </div>
 
-          {/* 2 cuadros de proyectos */}
-          <div className="projects-grid">
+          {/* Cuadros de proyectos */}
+          <div className={`projects-grid ${service.projectsDetail?.length === 1 ? "single-project" : ""}`}>
             {service.projectsDetail.map((project) => {
               const handleCardClick = () => {
-                if (project.video) {
+                if (project.htmlUrl) {
+                  setActiveLightboxHtml({ url: project.htmlUrl, title: project.title });
+                } else if (project.video) {
                   setActiveLightboxVideo(project.video);
                 } else if (project.images) {
                   setActiveLightboxImages(project.images);
@@ -247,47 +254,64 @@ export default function ServiceProjectsPage() {
                   onPointerMove={moveGlow}
                   onClick={handleCardClick}
                 >
-                  <div style={{ display: "flex", flexDirection: "column", gap: "14px", height: "100%", width: "100%" }}>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "10px", height: "100%", width: "100%" }}>
                     {/* Header */}
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
                       <span style={{
                         color: service.accent === "pink" ? "var(--pink-neon)" : "var(--accent-color)",
                         fontWeight: "bold",
                         letterSpacing: "0.1em",
-                        fontSize: "13px"
+                        fontSize: "11.5px"
                       }}>
                         {project.company.toUpperCase()}
                       </span>
-                      <CheckCircle2 size={18} style={{ color: service.accent === "pink" ? "var(--pink-neon)" : "var(--accent-color)" }} />
+                      <CheckCircle2 size={16} style={{ color: service.accent === "pink" ? "var(--pink-neon)" : "var(--accent-color)" }} />
                     </div>
 
                     {/* Text above image */}
                     <div>
                       <h3 style={{
-                        fontSize: "21px",
+                        fontSize: "14.5px",
                         color: "var(--ink)",
                         fontFamily: "var(--font-display)",
                         fontStyle: "italic",
                         margin: 0,
                         textTransform: "uppercase",
-                        lineHeight: "1.1"
+                        lineHeight: "1.25",
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                        minHeight: "2.5em"
                       }}>
                         {project.title}
                       </h3>
-                      <p style={{ marginTop: "8px", color: "var(--ink-soft)", fontSize: "13.5px", lineHeight: "1.5" }}>
+                      <p style={{
+                        marginTop: "4px",
+                        color: "var(--ink-soft)",
+                        fontSize: "11.5px",
+                        lineHeight: "1.35",
+                        fontFamily: "var(--font-body)",
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                        minHeight: "2.7em"
+                      }}>
                         {project.description}
                       </p>
                     </div>
 
                     {/* Image Wrapper */}
-                    <div style={{
+                    <div className="project-card-image-wrapper" style={{
                       position: "relative",
                       width: "100%",
-                      aspectRatio: project.aspectRatio || "16 / 9",
+                      aspectRatio: "16 / 9",
+                      height: "auto",
                       borderRadius: "12px",
                       overflow: "hidden",
                       border: "1px solid var(--line)",
-                      marginTop: "16px",
+                      marginTop: "8px",
                       background: "rgba(0, 0, 0, 0.2)"
                     }}>
                       <Image
@@ -295,17 +319,17 @@ export default function ServiceProjectsPage() {
                         alt=""
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        style={{ objectFit: project.aspectRatio ? "contain" : "cover" }}
+                        style={{ objectFit: "cover" }}
                         priority
                       />
                     </div>
 
                     {/* Button */}
-                    <div style={{ marginTop: "auto", paddingTop: "8px" }}>
+                    <div style={{ marginTop: "auto", paddingTop: "6px" }}>
                       <button
                         type="button"
                         className="site-btn secondary"
-                        style={{ padding: "8px 18px", fontSize: "11px", minHeight: "36px", width: "100%", display: "flex", justifyContent: "center" }}
+                        style={{ padding: "7px 16px", fontSize: "11px", minHeight: "34px", width: "100%", display: "flex", justifyContent: "center" }}
                         onPointerMove={moveGlow}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -514,6 +538,124 @@ export default function ServiceProjectsPage() {
                   </div>
                 </>
               )}
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* Interactive HTML Project Lightbox Overlay */}
+      {activeLightboxHtml !== null && (() => {
+        const fullUrl = activeLightboxHtml.url.includes("?")
+          ? `${activeLightboxHtml.url}&lang=${lang}&theme=dark`
+          : `${activeLightboxHtml.url}?lang=${lang}&theme=dark`;
+
+        return (
+          <div
+            className="modal-overlay"
+            style={{ zIndex: 110, background: "rgba(2, 3, 10, 0.94)" }}
+            onClick={() => setActiveLightboxHtml(null)}
+          >
+            <button
+              type="button"
+              className="modal-close-btn"
+              style={{ top: "24px", right: "24px", width: "44px", height: "44px", zIndex: 10 }}
+              onClick={() => setActiveLightboxHtml(null)}
+              aria-label={labels.closeProject}
+            >
+              <X size={24} />
+            </button>
+
+            <div
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                width: "min(1280px, calc(100vw - 32px))",
+                height: "min(880px, calc(100vh - 48px))",
+                position: "relative",
+                borderRadius: "16px",
+                overflow: "hidden",
+                border: "1px solid rgba(255, 255, 255, 0.12)",
+                boxShadow: "0 24px 80px rgba(0, 0, 0, 0.9)",
+                margin: "auto",
+                display: "flex",
+                flexDirection: "column",
+                background: "#080912",
+              }}
+            >
+              {/* Header bar */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  padding: "14px 20px",
+                  background: "rgba(10, 14, 25, 0.95)",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+                  gap: "12px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", overflow: "hidden" }}>
+                  <span
+                    style={{
+                      display: "inline-block",
+                      width: "8px",
+                      height: "8px",
+                      borderRadius: "50%",
+                      background: "#00d26a",
+                      boxShadow: "0 0 8px #00d26a",
+                      flexShrink: 0,
+                    }}
+                  />
+                  <span
+                    style={{
+                      color: "#fff",
+                      fontFamily: "var(--font-display)",
+                      fontSize: "15px",
+                      fontWeight: 600,
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      letterSpacing: "0.03em",
+                    }}
+                  >
+                    {activeLightboxHtml.title}
+                  </span>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", flexShrink: 0, paddingRight: "36px" }}>
+                  <a
+                    href={fullUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="site-btn secondary"
+                    style={{
+                      padding: "6px 14px",
+                      fontSize: "11px",
+                      minHeight: "32px",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "6px",
+                      textDecoration: "none",
+                    }}
+                    onPointerMove={moveGlow}
+                  >
+                    <span className="btn-glow" aria-hidden="true" />
+                    <span className="btn-content" style={{ gap: "6px" }}>
+                      <ExternalLink size={13} />
+                      {labels.fullscreen}
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Iframe */}
+              <div style={{ flex: 1, width: "100%", position: "relative", background: "#05070f" }}>
+                <iframe
+                  src={fullUrl}
+                  title={activeLightboxHtml.title}
+                  style={{ width: "100%", height: "100%", border: "none", display: "block" }}
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         );

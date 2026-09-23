@@ -13,6 +13,7 @@ export type ProjectDetail = {
   image: string;
   video?: string;
   images?: string[];
+  htmlUrl?: string;
   aspectRatio?: string;
 };
 
@@ -47,26 +48,13 @@ export const EN_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "Operations Automation",
-        description: "Creation of robust workflows connecting CRMs, databases, and messaging systems.",
-        image: "/assets/images/projects/Automatización de Operaciones.webp",
-        images: [
-          "/assets/images/projects/n8n-1.webp",
-          "/assets/images/projects/n8n-2.webp",
-          "/assets/images/projects/n8n-3.webp"
-        ]
+        title: "Ecommerce AI Content Production & Social Media Automation System",
+        description:
+          "Automated AI workflow for visual asset creation, dynamic video and scheduled multi-platform publishing.",
+        image: "/assets/images/projects/Shampoo Prai.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/ecommerce-ai-content-production-social-media-automation-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Real-time Synchronization",
-        description: "Bi-directional connection between Shopify, Stripe, and CRMs to update data instantly.",
-        image: "/assets/images/projects/Sincronización en Tiempo Real.webp",
-        images: [
-          "/assets/images/projects/n8n-1.webp",
-          "/assets/images/projects/n8n-2.webp",
-          "/assets/images/projects/n8n-3.webp"
-        ]
-      }
     ],
   },
   {
@@ -86,24 +74,13 @@ export const EN_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "WhatsApp Sales Chatbots",
-        description: "Automated WhatsApp assistant capable of qualifying leads and booking appointments in the CRM.",
-        image: "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-        images: [
-          "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-          "/assets/images/projects/AgentesdeIA&Chatbots.webp"
-        ]
+        title: "Pagureo - Omnichannel Sales & CRM Automation System",
+        description:
+          "Automated sales messaging with WhatsApp AI bots, smart lead scoring and centralized pipeline CRM.",
+        image: "/assets/images/projects/AI Agent.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/pagureo-omnichannel-sales-crm-automation-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Intelligent Support Agent",
-        description: "Conversational agent trained on the company's knowledge base to resolve common queries.",
-        image: "/assets/images/projects/AgentesdeIA&Chatbots.webp",
-        images: [
-          "/assets/images/projects/AgentesdeIA&Chatbots.webp",
-          "/assets/images/projects/Chatbots(Portada).webp"
-        ]
-      }
     ],
   },
   {
@@ -123,26 +100,13 @@ export const EN_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "GoHighLevel Sales Funnel",
-        description: "Comprehensive GHL setup to capture leads, send email sequences, and automate the sales funnel.",
-        image: "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
-        images: [
-          "/assets/images/projects/ghl-1.webp",
-          "/assets/images/projects/ghl-2.webp",
-          "/assets/images/projects/ghl-3.webp",
-          "/assets/images/projects/workflow-go-high-level.webp"
-        ]
+        title: "Ecommerce Retention & Customer Lifecycle System",
+        description:
+          "Customer 360 retention in GoHighLevel turning one-time buyers into loyal repeat brand customers.",
+        image: "/assets/images/projects/ghl-logo.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/ecommerce-retention-customer-lifecycle-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Sales Reporting & Dashboards",
-        description: "Synchronization of CRM and Meta Ads data into interactive real-time dashboards.",
-        image: "/assets/images/projects/Reporting y Sales Ops.webp",
-        images: [
-          "/assets/images/projects/Dashboard 2 meta ads.webp",
-          "/assets/images/projects/Reporting y Sales Ops.webp"
-        ]
-      }
     ],
   },
   {
@@ -162,24 +126,13 @@ export const EN_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "Sales & Ads Dashboards",
-        description: "Integration of acquisition and conversion metrics into a centralized interactive panel.",
-        image: "/assets/images/projects/Dashboard 2 meta ads.webp",
-        images: [
-          "/assets/images/projects/Dashboard 2 meta ads.webp",
-          "/assets/images/projects/Reporting y Sales Ops(Ingles).webp"
-        ]
+        title: "Ecommerce Revenue Operating System & Commercial Reporting",
+        description:
+          "Central analytics hub unifying ad attribution, paid traffic performance and financial metrics.",
+        image: "/assets/images/projects/n8n-portada.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/ecommerce-revenue-operating-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Automated Sales Reporting",
-        description: "Daily and weekly performance reports sent directly to Slack or email.",
-        image: "/assets/images/projects/Reporting y Sales Ops(Ingles).webp",
-        images: [
-          "/assets/images/projects/Reporting y Sales Ops(Ingles).webp",
-          "/assets/images/projects/Dashboard 2 meta ads.webp"
-        ]
-      }
     ],
   },
 ];
@@ -202,26 +155,13 @@ export const ES_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "Automatización de Operaciones",
-        description: "Creación de flujos robustos que conectan CRMs, bases de datos y sistemas de mensajería.",
-        image: "/assets/images/projects/Automatización de Operaciones.webp",
-        images: [
-          "/assets/images/projects/n8n-1.webp",
-          "/assets/images/projects/n8n-2.webp",
-          "/assets/images/projects/n8n-3.webp"
-        ]
+        title: "Sistema de Producción de Contenido con IA y Automatización de Redes",
+        description:
+          "Flujo automatizado con IA para generar creativos, video y publicación programada en redes sociales.",
+        image: "/assets/images/projects/Shampoo Prai.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/ecommerce-ai-content-production-social-media-automation-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Sincronización en Tiempo Real",
-        description: "Conexión bidireccional entre Shopify, Stripe y CRMs para actualizar datos al instante.",
-        image: "/assets/images/projects/Sincronización en Tiempo Real.webp",
-        images: [
-          "/assets/images/projects/n8n-1.webp",
-          "/assets/images/projects/n8n-2.webp",
-          "/assets/images/projects/n8n-3.webp"
-        ]
-      }
     ],
   },
   {
@@ -241,24 +181,13 @@ export const ES_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "Chatbots de Ventas en WhatsApp",
-        description: "Asistente automatizado en WhatsApp capaz de calificar prospectos y agendar citas en el CRM.",
-        image: "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-        images: [
-          "/assets/images/projects/Chatbots de Ventas en WhatsApp.webp",
-          "/assets/images/projects/AgentesdeIA&Chatbots.webp"
-        ]
+        title: "Pagureo - Sistema de Automatización de Ventas Omnicanal y CRM",
+        description:
+          "Atención comercial automatizada con agentes IA en WhatsApp, calificación de prospectos y pipeline CRM.",
+        image: "/assets/images/projects/AI Agent.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/pagureo-omnichannel-sales-crm-automation-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Agente Inteligente de Soporte",
-        description: "Agente conversacional entrenado con la base de conocimientos de la empresa para resolver dudas comunes.",
-        image: "/assets/images/projects/AgentesdeIA&Chatbots.webp",
-        images: [
-          "/assets/images/projects/AgentesdeIA&Chatbots.webp",
-          "/assets/images/projects/Chatbots(Portada).webp"
-        ]
-      }
     ],
   },
   {
@@ -278,26 +207,13 @@ export const ES_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "Embudo de Ventas en GoHighLevel",
-        description: "Configuración integral de GHL para capturar leads, enviar secuencias de correos y automatizar el embudo comercial.",
-        image: "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
-        images: [
-          "/assets/images/projects/ghl-1.webp",
-          "/assets/images/projects/ghl-2.webp",
-          "/assets/images/projects/ghl-3.webp",
-          "/assets/images/projects/workflow-go-high-level.webp"
-        ]
+        title: "Sistema de Retención Ecommerce y Ciclo de Vida del Cliente",
+        description:
+          "Estrategia Customer 360 en GoHighLevel para fidelizar compradores primerizos en clientes recurrentes.",
+        image: "/assets/images/projects/ghl-logo.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/ecommerce-retention-customer-lifecycle-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Reporting Comercial y Dashboards",
-        description: "Sincronización de datos CRM y Meta Ads en dashboards interactivos en tiempo real.",
-        image: "/assets/images/projects/Reporting y Sales Ops.webp",
-        images: [
-          "/assets/images/projects/Dashboard 2 meta ads.webp",
-          "/assets/images/projects/Reporting y Sales Ops.webp"
-        ]
-      }
     ],
   },
   {
@@ -317,24 +233,13 @@ export const ES_SERVICES: Service[] = [
     projectsDetail: [
       {
         company: "Joseph Clavijo",
-        title: "Dashboards de Ventas y Pauta",
-        description: "Integración de métricas de adquisición y conversión en un panel interactivo centralizado.",
-        image: "/assets/images/projects/Dashboard 2 meta ads.webp",
-        images: [
-          "/assets/images/projects/Dashboard 2 meta ads.webp",
-          "/assets/images/projects/Reporting y Sales Ops.webp"
-        ]
+        title: "Sistema Operativo de Ingresos Ecommerce y Reportería Comercial",
+        description:
+          "Panel analítico que unifica adquisición de tráfico, atribución de pauta y métricas clave de negocio.",
+        image: "/assets/images/projects/n8n-portada.webp",
+        aspectRatio: "16 / 9",
+        htmlUrl: "/assets/images/resultados/ecommerce-revenue-operating-system.html",
       },
-      {
-        company: "Joseph Clavijo",
-        title: "Reportería Comercial Automatizada",
-        description: "Envíos diarios y semanales de reportes de performance directamente a Slack o correo.",
-        image: "/assets/images/projects/Reporting y Sales Ops.webp",
-        images: [
-          "/assets/images/projects/Reporting y Sales Ops.webp",
-          "/assets/images/projects/Dashboard 2 meta ads.webp"
-        ]
-      }
     ],
   },
 ];

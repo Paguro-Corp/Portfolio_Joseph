@@ -650,7 +650,7 @@ export default function PaguraiLanding() {
             <div className="visual-stage">
               <div className="reel-card main-reel" style={{ background: "rgba(18, 18, 26, 0.6)", overflow: "hidden", position: "relative" }}>
                 <Image
-                  src="/assets/images/projects/automatizacion-joseph.webp"
+                  src="/assets/images/projects/HeroSection.webp"
                   alt="Automation Workflow"
                   fill
                   style={{ objectFit: "cover" }}
