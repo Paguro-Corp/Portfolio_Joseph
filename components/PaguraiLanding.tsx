@@ -276,6 +276,8 @@ const COPY: Record<Lang, Copy> = {
         ["Embudo de Ventas en GoHighLevel", "CRM", "small"],
         ["Reporting y Sales Ops", "Dashboard", "small"],
         ["Sincronización en Tiempo Real", "Automatización", "wide"],
+        ["Flujo de Nutrición de Clientes", "Automatización", "small"],
+        ["Dashboard de Pauta Digital", "Reporting", "small"],
       ],
     },
     cta: {
@@ -330,6 +332,8 @@ const PORTFOLIO_IMAGES = [
   "/assets/images/projects/AutomatizacióndeCRM&Leads(Portada).webp",
   "/assets/images/projects/Reporting y Sales Ops.webp",
   "/assets/images/projects/Sincronización en Tiempo Real.webp",
+  "/assets/images/projects/Banner CRM.webp",
+  "/assets/images/projects/Dashboard 2 meta ads.webp",
 ];
 
 
@@ -630,14 +634,15 @@ export default function PaguraiLanding() {
             <span className="section-badge">{copy.hero.badge}</span>
             <h1>{copy.hero.title}</h1>
             <p>{copy.hero.text}</p>
-            <div className="hero-actions">
-              <Button href="#contacto">
-                {copy.hero.work} <ArrowRight size={18} />
-              </Button>
-              <Button href="#servicios" variant="ghost">
-                <Play size={17} /> {copy.hero.system}
-              </Button>
-            </div>
+          </div>
+
+          <div className="hero-actions">
+            <Button href="#contacto">
+              {copy.hero.work} <ArrowRight size={18} />
+            </Button>
+            <Button href="#servicios" variant="ghost">
+              <Play size={17} /> {copy.hero.system}
+            </Button>
           </div>
 
           <aside className="hero-visual" aria-label={copy.hero.visualAria}>
@@ -655,7 +660,7 @@ export default function PaguraiLanding() {
                   fill
                   style={{ objectFit: "cover" }}
                 />
-                <span style={{ position: "absolute", zIndex: 10, background: "rgba(0,0,0,0.6)", padding: "4px 8px", borderRadius: "4px", left: "12px", bottom: "12px", fontSize: "11px", fontFamily: "var(--font-display)" }}>
+                <span style={{ position: "absolute", zIndex: 10, background: "rgba(0,0,0,0.6)", padding: "4px 8px", borderRadius: "4px", right: "12px", top: "auto", bottom: "12px", left: "auto", height: "auto", fontSize: "11px", fontFamily: "var(--font-display)" }}>
                   {copy.hero.video}
                 </span>
               </div>

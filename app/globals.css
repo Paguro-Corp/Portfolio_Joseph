@@ -382,9 +382,18 @@ main {
   min-height: calc(100svh - 96px);
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.88fr);
+  grid-template-areas: "copy visual" "actions visual";
   align-items: center;
   gap: 48px;
   padding: 125px 0 36px;
+}
+
+.hero-copy {
+  grid-area: copy;
+}
+
+.hero-visual {
+  grid-area: visual;
 }
 
 .hero-section,
@@ -470,10 +479,10 @@ main {
 }
 
 .hero-actions {
+  grid-area: actions;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 34px;
 }
 
 .site-btn {
@@ -657,12 +666,7 @@ main {
 }
 
 .main-reel span {
-  position: absolute;
-  z-index: 2;
-  top: 14px;
-  left: 14px;
   color: rgba(255, 255, 255, 0.78);
-  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
 }
@@ -1637,7 +1641,6 @@ main {
     width: min(100%, calc(100vw - 24px));
   }
 
-  .hero-section,
   .section-head,
   .contact-section {
     grid-template-columns: 1fr;
@@ -1647,6 +1650,8 @@ main {
     min-height: auto;
     padding-top: 100px;
     gap: 34px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "copy" "visual" "actions";
   }
 
   .hero-visual {
